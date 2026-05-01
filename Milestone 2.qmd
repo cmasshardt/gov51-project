@@ -18,7 +18,7 @@ snapshot2024 <- read_csv("./data/snapshot2024.csv")
 
 ## Explaining the Datasets
 
-***keystone***
+***keystone data***
 
 The "keystone" dataset includes summary data at the statewide level for observing the relationship between per-pupil spending and proficiency on the Pennsylvania standardized assessments (Keystone exams) over the period from the 2014-15 academic year to the 2023-24 academic year. The dataset includes the following variables:
 
