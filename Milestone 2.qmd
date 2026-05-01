@@ -71,7 +71,7 @@ ncol(snapshot2024)
 
 As a note on where this project could be headed, the state has also begun to provide demographic breakdowns of student scores in recent years. With some further wrangling, the snapshot2024 data could be expanded to include this demographic information, which might prove useful as covariates in a regression showing he relationship between overall per-pupil expenditure and statewide exam proficiency. Another opportunity for further analysis would be to add data on the percentage of students scoring "basic" or "below basic" on the exams, which might shed light on how district spending impacts students with lower levels of performance.
 
-## Summary Statistics for 2023-24 Snapshot Data
+## Summary Statistics for the 2023-24 Snapshot Data
 
 ```{r}
 summary_2024 <- summary(snapshot2024[,-c(1,2)])
