@@ -1,0 +1,325 @@
+---
+title: "Gov 51 Milestone 2"
+author: "Caleb Masshardt"
+format: pdf
+editor: visual
+---
+
+## Reading in the Data and Packages
+
+```{r}
+#| message: false
+#| warning: false
+library(tidyverse)
+library(knitr)
+keystone <- read_csv("./data/keystone.csv")
+snapshot2024 <- read_csv("./data/snapshot2024.csv")
+```
+
+## Explaining the Datasets
+
+***keystone***
+
+The "keystone" dataset includes summary data at the statewide level for observing the relationship between per-pupil spending and proficiency on the Pennsylvania standardized assessments (Keystone exams) over the period from the 2014-15 academic year to the 2023-24 academic year. The dataset includes the following variables:
+
+| Variable Name | Description |
+|------------------------------------|------------------------------------|
+| year | Academic year from which the data was collected. Expenditures follow the academic/fiscal year (i.e. 2014-15), and Keystone exam scores are collected in the spring (i.e. 2015). |
+| tot_current_per_adm | Statewide current expenditure per average daily member – the average number of students *enrolled* in schools during the academic year. Measured in dollars. |
+| tot_instruction_per_adm | Statewide *instruction* expenditure per average daily member, isolating spending that is specifically targeted toward student instruction. Measured in dollars. |
+| tot_prof_alg | Percent of students scoring proficient or advanced on the Algebra Keystone exam. |
+| tot_prof_bio | Percent of students scoring proficient or advanced on the Biology Keystone exam. |
+| tot_prof_eng | Percent of students scoring proficient or advanced on the English (Literature) Keystone exam. |
+
+```{r}
+#Broad overview to get a sense of the data
+head(keystone)
+
+#Number of rows (observations)
+nrow(keystone)
+
+#Number of columns (vairables)
+ncol(keystone)
+```
+
+***\
+snapshot2024***
+
+The "snapshot2024" dataset zeroes in on the 2023-24 academic year to more closely examine the relationship between per-pupil spending and exam proficiency across districts in the state. This dataset includes the following variables:
+
+| Variable Name | Description |
+|------------------------------------|------------------------------------|
+| district | Name of the school district. There are 500 school districts in the state of Pennsylvania. |
+| county | The county in which the school district resides. |
+| current_per_adm | The school district's current expenditure per average daily member – the average number of students *enrolled* in a district during the academic year. Measured in dollars. |
+| instruction_per_adm | The school district's *instruction* expenditure per average daily member, isolating spending that is specifically targeted toward student instruction. Measured in dollars. |
+| tot_prof_alg | Percent of students scoring proficient or advanced on the Algebra Keystone exam. |
+| tot_prof_bio | Percent of students scoring proficient or advanced on the Biology Keystone exam. |
+| tot_prof_eng | Percent of students scoring proficient or advanced on the English (Literature) Keystone exam. |
+
+```{r}
+#Broad overview to get a sense of the data
+head(snapshot2024)
+
+#Number of rows (observations)
+nrow(snapshot2024)
+
+#Number of columns (vairables)
+ncol(snapshot2024)
+
+```
+
+As a note on where this project could be headed, the state has also begun to provide demographic breakdowns of student scores in recent years. With some further wrangling, the snapshot2024 data could be expanded to include this demographic information, which might prove useful as covariates in a regression showing he relationship between overall per-pupil expenditure and statewide exam proficiency. Another opportunity for further analysis would be to add data on the percentage of students scoring "basic" or "below basic" on the exams, which might shed light on how district spending impacts students with lower levels of performance.
+
+## Summary Statistics for 2023-24 Snapshot Data
+
+```{r}
+summary_2024 <- summary(snapshot2024[,-c(1,2)])
+
+summary_2024 |>
+  kable(
+    col.names = c("Total Expense per ADM",
+                  "Instruction per ADM", "Algebra Proficiency",
+                  "Biology Proficiency", "English Proficiency"),
+    digits = 2,
+    caption = "Summary Statistics for 2023-24 Spending and Exam Score Data"
+  )
+```
+
+## Preliminary Exploration: Per-Pupil Spending and Test Scores over Time (2014-15 to 2023-24)
+
+First, I will explore broadly the relationship between per-pupil expenditure and exam scores at the statewide level using the *keystone* dataset. The following chart displays expenditure per average daily member by year for which the state has collected data, highlighting the upward trend of spending over time. Noting this upward trend, we can observe that when we plot current spending per ADM along the x-axis in scatterplots, the trend along the x-axis will also follow the trend in years, though we are mostly concerned with the relationship between spending and test score proficiency in particular.
+
+```{r}
+#| message: false
+#| warning: false
+library(scales)
+ggplot(keystone, aes(x=year, y=tot_current_per_adm)) +
+geom_col(width=0.8, fill="steelblue") +
+  labs(title = "Per-Pupil Expenditures, 2014-2024") +
+  labs(x = "Academic Year", y = "Current Expenditure per ADM ($)") +
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+  theme_minimal()
+```
+
+\
+
+```{r}
+#| message: false
+#| warning: false
+library(scales)
+ggplot(keystone, aes(x=year, y=tot_prof_alg)) +
+geom_col(width=0.8, fill="steelblue") +
+  labs(title = "Algebra Proficiency, 2014-2024") +
+  labs(x = "Academic Year", y = "% Proficient on Algebra Keystone Exam") +
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+  theme_minimal()
+```
+
+```{r}
+#| message: false
+#| warning: false
+library(scales)
+ggplot(keystone, aes(x=year, y=tot_prof_eng)) +
+geom_col(width=0.8, fill="steelblue") +
+  labs(title = "English Proficiency, 2014-2024") +
+  labs(x = "Academic Year", y = "% Proficient on English Keystone Exam") +
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+  theme_minimal()
+```
+
+***Per-Pupil Spending and Algebra Proficiency***
+
+The following scatterplot and linear model summary displays the relationship between current expense per average daily member and proficiency on the [Algebra Keystone exam.]{.underline}
+
+```{r}
+#| message: false
+#| warning: false
+#Plotting per-pupil spending and algebra proficiency rate
+ggplot(keystone,
+aes(tot_current_per_adm, tot_prof_alg)) +
+  geom_point(color = "steelblue") +
+  geom_smooth(method = "lm") +
+  labs(x = "Current Expenditure Per-Pupil Expenditure ($)", y = "Algebra Proficiency Rate (%)",
+       title = "Putting it Together: Per Pupil Spending and Algebra Proficiency") +
+  theme_minimal()
+
+#Simple regression
+algebra_lm <- lm(tot_prof_alg ~ tot_current_per_adm, data = keystone)
+summary(algebra_lm)
+
+#Correlation coefficient
+coef_alg <- cor(keystone$tot_current_per_adm, keystone$tot_prof_alg, use="complete.obs")
+coef_alg
+```
+
+**The correlation coefficient (r) is -0.793**, indicating a moderately strong, negative relationship between current expenditure per ADM and proficiency on the Algebra Keystone exam. **The coefficient on the expenditure per adm variable is -0.0043**, which is statistically significant but quite small.
+
+As the scatterplot shows, there is a significant dip in test scores for the years after Covid (2020 scores were not even reported). This makes it difficult to observe a singular trend in the relationship between spending and exam proficiency, perhaps warranting removal from the longitudinal data and/or a separate analysis of the most recent years in the final analysis.\
+
+***Per-Pupil Spending and English Proficiency***
+
+Before moving onto the 2023-24 snapshot in time data, I will briefly explore the relationship between the current expenditure per adm and proficiency on the English (literature) Keystone exam to see if the relationship differs by test subject matter.
+
+```{r}
+#| message: false
+#| warning: false
+#Plotting per-pupil spending and algebra proficiency rate
+ggplot(keystone,
+aes(tot_current_per_adm, tot_prof_eng)) +
+  geom_point(color = "steelblue") +
+  geom_smooth(method = "lm") +
+  labs(x = "Current Per-Pupil Expenditure ($)", y = "English Proficiency Rate (%)",
+       title = "Per-Pupil Spending and English Proficiency") +
+  theme_minimal()
+
+#Simple regression
+english_lm <- lm(tot_prof_eng ~ tot_current_per_adm, data = keystone)
+summary(english_lm)
+
+#Correlation coefficient
+coef_eng <- cor(keystone$tot_current_per_adm, keystone$tot_prof_eng,
+                use="complete.obs")
+coef_eng
+```
+
+Here, **the correlation coefficient (r) is -0.618**, likewise indicating a moderately strong, negative relationship between current expenditure per ADM and proficiency on the English Keystone exam. With English scores, the relationship between spending and proficiency is slightly weaker than that of Algebra scores. **The coefficient on the expenditure per adm variable is -0.0023**, which is statistically significant but quite small. Overall, the relationship between per-pupil expenditures and state exam proficiency does not differ significantly for algebra vs. English exams.
+
+English scores took an earlier hit from Covid than Algebra scores in the state, but the English scores bounced back toward pre-Covid levels more quickly. The impacts of Covid will thus need to be considered in analysis of the relationship between per-pupil spending and English proficiency as well.
+
+## Preliminary Exploration: Per-Pupil Spending and Test Proficiency in the 2023-24 Academic Year
+
+***2023-24 Per-Pupil Spending and Algebra Proficiency***
+
+While the relationship between per-pupil spending and student proficiency over time at the state level is interesting, there is also great diversity across districts in the state. By zooming in on the 2023-24 academic year, we can see the relationship between a district's per-pupil spending (current expenditure per adm) and the proficiency rate of its students on the Algebra and English Keystone exams.
+
+```{r}
+#| message: false
+#| warning: false
+#Plotting 2023-24 per-pupil spending and algebra proficiency rate
+ggplot(snapshot2024,
+aes(current_per_adm, prof_alg)) +
+  geom_point(color = "steelblue") +
+  xlim(10000,40000) +
+  geom_smooth(method = "lm") +
+  labs(x = "District Expenditure per ADM ($)", y = "Algebra Proficiency Rate (%)",
+       title = "District Per-Pupil Spending and Algebra Proficiency") +
+  theme_minimal()
+
+#Simple regression
+alg2024_lm <- lm(prof_alg ~ current_per_adm, data = snapshot2024)
+summary(alg2024_lm)
+
+#Correlation coefficient
+coef_alg2024 <- cor(snapshot2024$current_per_adm, snapshot2024$prof_alg, use="complete.obs")
+coef_alg2024
+```
+
+So far, the relationship between per-pupil expenditure and Algebra proficiency looks quite weak and very noisy across districts. The correlation coefficient r is only -0.0459, indicating a very weak, negative relationship. The coefficient for current_per_adm in the regression is also very small (-0.00024) and is statistically insignificant. This means that I will need to look elsewhere, perhaps at disaggregated test score data, to determine how spending might impact student performance on state exams. With many confounders not yet accounted for, this preliminary finding of a very weak relationship between per-pupil spending and student proficiency is interesting, but not yet interpretable for policy purposes.\
+
+***2023-24 Per-Pupil Spending and English Proficiency***
+
+```{r}
+#Plotting 2023-24 per-pupil spending and English proficiency rate
+ggplot(snapshot2024,
+aes(current_per_adm, prof_eng)) +
+  geom_point(color = "steelblue") +
+  xlim(10000,40000) +
+  geom_smooth(method = "lm") +
+  labs(x = "District Expenditure per ADM ($)", y = "English Proficiency Rate (%)",
+       title = "Per Pupil Spending and English Proficiency") +
+  theme_minimal()
+
+#Simple regression
+eng2024_lm <- lm(prof_eng ~ current_per_adm, data = snapshot2024)
+summary(eng2024_lm)
+
+#Correlation coefficient
+coef_eng2024 <- cor(snapshot2024$current_per_adm, snapshot2024$prof_eng, use="complete.obs")
+coef_eng2024
+```
+
+A quick check of the linear model for per-pupil expenditure and English proficiency reveals a similar result. The correlation coefficient of only -0.0107 and the statistically insignificant coefficient for per-pupil expenditure as a predictor shows a likewise weak relationship between per-pupil spending and English proficiency in Pennsylvania.\
+
+***A Quick Look at [Instructional]{.underline} Spending***
+
+To wrap up this initial exploration and analysis of the data for my project, I will switch my predictor from current spending per adm to *instructional* spending per adm, as perhaps there is a stronger relationship between how much schools spend on instruction (as opposed to other costs) and student proficiency. I will do this analysis for the Algebra proficiency rate.
+
+```{r}
+#| message: false
+#| warning: false
+#Plotting 2023-24 per-pupil instructional spending and algebra proficiency rate
+ggplot(snapshot2024,
+aes(instruction_per_adm, prof_alg)) +
+  geom_point(color = "steelblue") +
+  xlim(7500, 22500) +
+  geom_smooth(method = "lm") +
+  labs(x = "Instructional Expenditure per ADM ($)", y = "Algebra Proficiency Rate (%)",
+       title = "Per-Pupil Instructional Spending and Algebra Proficiency") +
+  theme_minimal()
+
+#Simple regression
+alg_instruction_lm <- lm(prof_alg ~ instruction_per_adm, data = snapshot2024)
+summary(alg_instruction_lm)
+
+#Correlation coefficient
+coef_alg_instruction <- cor(snapshot2024$instruction_per_adm, snapshot2024$prof_alg,
+                            use="complete.obs")
+coef_alg_instruction
+```
+
+While this scatterplot for the relationship between instructional per-pupil expenditure and Algebra proficiency is also very noisy, we do see a slightly stronger negative correlation, with r = -0.115. We also a statistically significant (yet still very small) coefficient of -0.00093 for instruction_per_adm as a predictor of Algebra proficiency. If we can draw any cautious conclusions, it is quite fascinating that the relationship between per-pupil spending and student proficiency is negative; this is the opposite of what we might expect based on the centrality of funding as an intervention for improving student performance.
+
+A number of potential explanations exist, including that district with higher-need students (who score lower on state tests) will receive more state funding to catch their students up, even if the scores are still lower. [In future analysis]{.underline}, it will be beneficial to analyze the relationship between per-pupil expenditure and *change* in student test score to determine if additional funding helps districts that are falling behind catch up more quickly.
+
+***\
+2023-24 Demographic Zoom-In***
+
+*Black students*
+
+```{r}
+#Reading in spreadsheet with added data 
+snapshot2024_2 <- read_csv("./data/snapshot2024_2.csv")
+
+#Plotting 2023-24 per-pupil spending and Algebra proficiency rate for black students 
+ggplot(snapshot2024_2,
+aes(current_per_adm, prof_alg_black)) +
+  geom_point(color = "steelblue") +
+  xlim(10000,40000) +
+  geom_smooth(method = "lm") +
+  labs(x = "District Expenditure per ADM ($)", y = "Algebra Proficiency Rate (%)",
+       title = "Per Pupil Spending and Algebra Proficiency for Black Students") +
+  theme_minimal()
+
+#Simple regression
+alg_black_lm <- lm(prof_alg_black ~ current_per_adm, data = snapshot2024_2)
+summary(alg_black_lm)
+
+#Correlation coefficient
+coef_alg_black <- cor(snapshot2024_2$current_per_adm, snapshot2024_2$prof_alg_black, use="complete.obs")
+coef_alg_black
+```
+
+***\
+Economically disadvantaged students***
+
+```{r}
+#Plotting 2023-24 per-pupil spending and Algebra proficiency rate for
+# economically disadvantaged students 
+ggplot(snapshot2024_2,
+aes(current_per_adm, prof_alg_dis)) +
+  geom_point(color = "steelblue") +
+  xlim(10000,40000) +
+  geom_smooth(method = "lm") +
+  labs(x = "District Expenditure per ADM ($)", y = "Algebra Proficiency Rate (%)",
+       title = "Per Pupil Spending and Algebra Proficiency for Disadvantaged Students") +
+  theme_minimal()
+
+#Simple regression
+alg_dis_lm <- lm(prof_alg_dis ~ current_per_adm, data = snapshot2024_2)
+summary(alg_dis_lm)
+
+#Correlation coefficient
+coef_alg_dis <- cor(snapshot2024_2$current_per_adm, snapshot2024_2$prof_alg_dis, use="complete.obs")
+coef_alg_dis
+```

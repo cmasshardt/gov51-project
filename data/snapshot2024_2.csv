@@ -1,0 +1,501 @@
+district,county,current_per_adm,instruction_per_adm,prof_alg,prof_bio,prof_eng,prof_alg_dis,prof_alg_black
+Bermudian Springs SD,Adams,16947.96,10187.75,32.7,44.9,58.1,19.6,NA
+Conewago Valley SD,Adams,17880.17,12789.73,43.8,48.3,58.5,37,NA
+Fairfield Area SD,Adams,21400.38,11768.07,31.4,40.9,64.7,27.3,NA
+Gettysburg Area SD,Adams,20665.6,13265.99,51.9,61.5,69.3,39,14.3
+Littlestown Area SD,Adams,18152.83,12252.05,61.7,72.7,66.4,45.8,NA
+Upper Adams SD,Adams,18791.11,12565.83,51.9,64.3,69,44.4,NA
+Allegheny Valley SD,Allegheny,23573.75,13918.14,32,57.8,67.2,28,NA
+Avonworth SD,Allegheny,17356.86,11301.18,64.8,66.2,82.2,31.8,NA
+Baldwin-Whitehall SD,Allegheny,16853.44,10119.73,44.8,59.2,63.1,38.5,18.8
+Bethel Park SD,Allegheny,21836.89,15007.07,45.5,66.3,78.6,28.4,NA
+Brentwood Borough SD,Allegheny,21594.66,14901.54,23.7,48.8,58.5,16.3,18.2
+Carlynton SD,Allegheny,23702.28,15418.82,43.6,65.4,76.4,35.7,NA
+Chartiers Valley SD,Allegheny,19732.31,13305.53,19.3,63.8,57.4,16.2,NA
+Clairton City SD,Allegheny,20798.38,12835.67,11.1,21.6,59.5,11.8,10.3
+Cornell SD,Allegheny,27634.71,17541.08,12.5,31.7,42.5,12.5,NA
+Deer Lakes SD,Allegheny,21416.9,13733.09,48.2,42,74.4,36.6,NA
+Duquesne City SD,Allegheny,24272.33,16539.91,NA,NA,NA,NA,NA
+East Allegheny SD,Allegheny,23557.31,15637.76,15.3,20,32.4,12.2,5.9
+Elizabeth Forward SD,Allegheny,19775.11,11969.2,57.3,55.6,66.8,42.4,NA
+Fox Chapel Area SD,Allegheny,24862.53,16321.19,86.3,89.3,90,77.8,NA
+Gateway SD,Allegheny,24487.28,15065.89,40.8,57,71,33,17.4
+Hampton Township SD,Allegheny,21400.41,13498.1,75.6,83.4,92.9,62.1,NA
+Highlands SD,Allegheny,21493.85,13952.5,36.2,42.9,57.5,30,NA
+Keystone Oaks SD,Allegheny,23581.32,14730.14,52.2,56.9,78.9,46.6,NA
+McKeesport Area SD,Allegheny,18978.26,13457.07,10.5,28.4,40.8,6.6,7.5
+Montour SD,Allegheny,21019.47,13404.13,54.5,58.6,78,35.4,18.8
+Moon Area SD,Allegheny,18948.46,12824.81,62.4,63.6,72.4,50.9,30.8
+Mt Lebanon SD,Allegheny,19213.99,12902.38,83.1,86.3,92.5,69.4,NA
+North Allegheny SD,Allegheny,20168.32,13002.37,69.6,81,88.6,52.7,NA
+North Hills SD,Allegheny,18409.41,12802.9,30.4,54,75.8,25,NA
+Northgate SD,Allegheny,24567.26,15463.59,27.1,35.3,42,12.5,0
+Penn Hills SD,Allegheny,21445.85,14618.06,3.9,21.9,27.2,5.1,2.8
+Pine-Richland SD,Allegheny,19452.9,12834.47,75.9,86.5,93.7,56.8,NA
+Pittsburgh SD,Allegheny,30385.12,20443.66,26.4,35.1,56.8,17,9.3
+Plum Borough SD,Allegheny,16649.93,10686.37,41.1,46,63.7,29.1,22.2
+Quaker Valley SD,Allegheny,26365.11,15782.16,73.1,75.9,78.5,41.9,NA
+Riverview SD,Allegheny,23425.82,14449.5,29.6,52.5,55.7,16.1,NA
+Shaler Area SD,Allegheny,23452.19,15939.94,49.2,58.1,74.3,37.1,NA
+South Allegheny SD,Allegheny,19646.38,13238.48,29.2,34.6,51.4,24.6,0
+South Fayette Township SD,Allegheny,17744.06,10637.18,79.3,84.4,88.8,56.3,NA
+South Park SD,Allegheny,18950.14,12144.06,71.4,57.8,79.7,57.1,NA
+Steel Valley SD,Allegheny,NA,NA,22.5,29.6,41.3,17.5,11.5
+Sto-Rox SD,Allegheny,18961.99,12103.67,0,3.6,13.8,0,0
+Upper St. Clair SD,Allegheny,22689.92,13696.9,74.6,83.7,93.5,61.5,NA
+West Allegheny SD,Allegheny,19404.12,10949.69,60.3,60.5,80.6,42.6,NA
+West Jefferson Hills SD,Allegheny,16022,10294.94,58.9,74.7,86.9,39.2,NA
+West Mifflin Area SD,Allegheny,26257.16,16903.03,10.5,32,37.1,10.5,10.4
+Wilkinsburg Borough SD,Allegheny,31865.32,22493.5,NA,NA,NA,,NA
+Woodland Hills SD,Allegheny,26304.23,17736,6.8,27.4,34.3,2,1.1
+Apollo-Ridge SD,Armstrong,21288.01,13672.96,25.5,64.6,67.7,21.4,NA
+Armstrong SD,Armstrong,20296.54,14070.14,59,65.9,75.6,39,NA
+Freeport Area SD,Armstrong,17942.83,11286,63.5,67.5,78.2,31.4,NA
+Leechburg Area SD,Armstrong,21442.55,13879.14,69,75.6,92.9,73.7,NA
+Aliquippa SD,Beaver,22989.52,15469.47,4.3,4.3,33.3,0,2.9
+Ambridge Area SD,Beaver,16625.63,11328.15,18.4,29.5,55.2,13.8,0
+Beaver Area SD,Beaver,17193.08,9761.19,51.5,63.2,84.4,28.2,15.6
+Big Beaver Falls Area SD,Beaver,19613.82,12275.86,23.9,24.8,55.8,17.3,NA
+Blackhawk SD,Beaver,16474.03,10656.6,46.5,61.8,72.4,30.8,NA
+Central Valley SD,Beaver,17191.85,11538.68,56.6,63.4,75.3,42.3,33.3
+Freedom Area SD,Beaver,20521.76,13425.74,37.8,42.1,68,35.7,NA
+Hopewell Area SD,Beaver,19440.26,12972.21,49.6,41.4,63.8,44,NA
+Midland Borough SD,Beaver,19103.32,12931.24,NA,NA,NA,NA,NA
+New Brighton Area SD,Beaver,21062.44,12937,41.3,43.5,53.3,28.8,NA
+Riverside Beaver County SD,Beaver,17134.78,10546.07,46.4,50,68.5,28.9,NA
+Rochester Area SD,Beaver,23926.16,15471.82,41.4,43.1,62.1,25,35.3
+South Side Area SD,Beaver,26785.62,15251.98,55.7,56.2,79.5,35,NA
+Western Beaver County SD,Beaver,21328.01,12953.17,55.6,52.8,55.3,50,NA
+Bedford Area SD,Bedford,17171.44,10706.25,62.9,54.9,62.3,45.1,NA
+Chestnut Ridge SD,Bedford,17654.23,11116.73,65.6,57.7,70.1,55.3,NA
+Everett Area SD,Bedford,16613.12,10172.66,50.7,53.6,69.6,44.4,NA
+Northern Bedford County SD,Bedford,17732.9,12030.12,57.9,71.4,81,39.3,NA
+Tussey Mountain SD,Bedford,19294.75,12484.21,43,33.3,53.2,40,NA
+Antietam SD,Berks,19172.54,12152.37,29.2,46.2,64.1,14.7,NA
+Boyertown Area SD,Berks,18150.59,12527.82,45,64.1,65.9,32,27.3
+Brandywine Heights Area SD,Berks,24695.6,15081.67,15.9,54.7,53.3,8.6,NA
+Conrad Weiser Area SD,Berks,22295.91,14880.13,40.8,47.7,56.2,33.7,33.3
+Daniel Boone Area SD,Berks,18955.56,12265.99,41.7,42.8,75.1,32.9,18.8
+Exeter Township SD,Berks,19472.62,12494.71,56.4,52.3,73.2,39.8,45
+Fleetwood Area SD,Berks,21246.22,14204.35,51.7,56.4,73.6,48.2,NA
+Governor Mifflin SD,Berks,17507.43,11372.7,27.2,37.5,54.9,14.1,12.5
+Hamburg Area SD,Berks,20478,13727.44,36.4,33.3,60.4,27.4,NA
+Kutztown Area SD,Berks,24675.34,15283.62,67,73,86.1,51.6,NA
+Muhlenberg SD,Berks,15783.87,9961.58,28.2,21.9,42,23.4,18.5
+Oley Valley SD,Berks,22690.2,13871.74,49.1,62.7,64.4,33.3,NA
+Reading SD,Berks,18834.98,12248.42,11.8,20.5,35.6,11.1,11.1
+Schuylkill Valley SD,Berks,19496.91,12646.86,51.7,52.3,57.3,32,NA
+Tulpehocken Area SD,Berks,24895.43,15815.59,73.8,72.3,66.7,72.1,NA
+Twin Valley SD,Berks,21862.1,14715.82,48,57.9,68.9,29,NA
+Wilson SD,Berks,17785.03,11832.35,37.4,51.8,70.9,17.5,9.7
+Wyomissing Area SD,Berks,21221.96,13263.34,50,52.6,74,30.6,41.7
+Altoona Area SD,Blair,16092.66,10317.69,49.9,56.6,58.4,38.8,25.7
+Bellwood-Antis SD,Blair,16822.82,10599.77,49.5,47.3,51.5,33.3,NA
+Claysburg-Kimmel SD,Blair,19486.46,10655.12,42.1,50.8,66.1,34.3,NA
+Hollidaysburg Area SD,Blair,15606.61,9926.19,48.1,58.3,72,32.2,NA
+Spring Cove SD,Blair,16396.7,9781.12,34,46.8,63.8,27.1,NA
+Tyrone Area SD,Blair,16668.36,10236.17,45.7,77.9,71.7,36.7,NA
+Williamsburg Community SD,Blair,16837.86,10106.8,43.3,54.8,54.8,35.3,NA
+Athens Area SD,Bradford,20796.9,13719.83,42.1,47.9,47.6,19.3,NA
+Canton Area SD,Bradford,20220.96,12935.85,18.2,41.4,55.9,16.7,NA
+Northeast Bradford SD,Bradford,21879.84,13921.56,52.5,61.9,70.3,36.4,NA
+Sayre Area SD,Bradford,25097.62,16487.73,30.9,52.2,40.8,27.6,NA
+Towanda Area SD,Bradford,18682.64,12028.71,51,44.6,65.7,43.9,NA
+Troy Area SD,Bradford,18034.23,11746.42,39.6,48.7,49.6,34.8,NA
+Wyalusing Area SD,Bradford,19101.94,11684.02,38.2,52.8,61.8,25,NA
+Bensalem Township SD,Bucks,20992.11,14683.76,33.6,46.1,54.5,27.7,14.6
+Bristol Borough SD,Bucks,22372.65,17053.64,28.4,27,47.9,25.5,15.4
+Bristol Township SD,Bucks,20941.32,14988.68,14.2,25.5,36.5,12,11.9
+Centennial SD,Bucks,24449.71,16456.46,33.3,42.4,50.6,22.5,0
+Central Bucks SD,Bucks,20703,13547.19,62.3,76.9,81.5,44.8,41.2
+Council Rock SD,Bucks,23333.76,15725.6,76.7,76.3,78.2,67.9,57.1
+Morrisville Borough SD,Bucks,26494.48,19199.65,6.7,18.6,45.7,5.3,7.7
+Neshaminy SD,Bucks,19268.75,13062.51,30.2,58.1,65.5,25,18.2
+New Hope-Solebury SD,Bucks,34587.05,20238.53,70.3,93.3,89.9,38.5,NA
+Palisades SD,Bucks,31388.08,19661.52,41.7,57.1,54.8,27.6,NA
+Pennridge SD,Bucks,19945.6,15036.64,34.3,61.7,76,23.1,33.3
+Pennsbury SD,Bucks,22411.17,15332.73,49.9,62.3,74.4,35.4,23.8
+Quakertown Community SD,Bucks,22431.22,15101.56,35,59.6,65.1,19.3,16.7
+Butler Area SD,Butler,16987.34,11252.78,39.2,47.3,57.2,26.9,NA
+Karns City Area SD,Butler,16709.17,9696.43,37.9,39.6,50,30.3,NA
+Knoch SD,Butler,17142.86,10430.5,24.8,56.7,63.5,2.4,NA
+Mars Area SD,Butler,13891.59,8760.27,58.8,70.8,76.4,18.8,NA
+Moniteau SD,Butler,19051.04,10669.24,37.7,47,74.6,20,NA
+Seneca Valley SD,Butler,19515.49,13502.69,40.6,64.8,65.2,37.5,NA
+Slippery Rock Area SD,Butler,18298.06,12502.38,57.6,60.6,80.3,42,NA
+Blacklick Valley SD,Cambria,19186.19,11818.35,49,36.7,43.5,42.1,NA
+Cambria Heights SD,Cambria,19040.45,11645.05,57,60.9,81,50,NA
+Central Cambria SD,Cambria,17245.76,10429.88,38.7,53.1,58.5,30.2,NA
+Conemaugh Valley SD,Cambria,21802.81,13657.06,46,58,58,40.7,NA
+Ferndale Area SD,Cambria,21495.5,13560.19,40,37.3,57.7,26.9,NA
+Forest Hills SD,Cambria,16129.81,9889.89,29.4,54.2,44.6,21.5,NA
+Greater Johnstown SD,Cambria,18923.43,12629.93,10.3,12.7,30.5,6.4,0
+Northern Cambria SD,Cambria,21747.97,13903.97,54,44.8,71.6,50,NA
+Penn Cambria SD,Cambria,16319.03,10173.88,67.6,62.1,79.2,55.9,NA
+Portage Area SD,Cambria,18240.28,10834.48,54.4,54.4,68.4,50,NA
+Richland SD,Cambria,15284.34,9500.3,74.3,61.7,82.1,47.2,NA
+Westmont Hilltop SD,Cambria,15686.09,9963.16,37.6,60.2,67.3,23.3,NA
+Cameron County SD,Cameron,21894.27,13136.23,51.4,52.9,70.6,57.1,NA
+Jim Thorpe Area SD,Carbon,22572.6,16315.83,48.2,47.4,68.7,39.6,NA
+Lehighton Area SD,Carbon,19044.26,13025.04,51.4,68.8,61.3,42.6,NA
+Palmerton Area SD,Carbon,19968.43,14222.01,47.5,54.2,67.8,22.2,NA
+Panther Valley SD,Carbon,16314.12,11793.6,19.2,32.5,57,16.4,NA
+Weatherly Area SD,Carbon,22779.99,14288.06,33.3,67.6,57.1,31.3,NA
+Bald Eagle Area SD,Centre,21384.24,13184.64,56.8,67.3,70.8,40.5,NA
+Bellefonte Area SD,Centre,19643.84,12551.7,53.6,55.4,50.2,31.3,NA
+Penns Valley Area SD,Centre,19824.06,11619.65,46.9,63.7,82.5,32.6,NA
+State College Area SD,Centre,24225.09,15242.23,76.3,80.2,86.9,51.4,38.5
+Avon Grove SD,Chester,16979.79,11136.55,61.2,65.9,76.8,43.1,NA
+Coatesville Area SD,Chester,23484.27,18045.06,11.9,19.7,48.5,7.6,4.2
+Downingtown Area SD,Chester,18661.16,12422.36,73.3,76.8,83.6,52.6,47.8
+Great Valley SD,Chester,23500.13,16072.87,67.1,79.1,82.6,35.3,NA
+Kennett Consolidated SD,Chester,22571.21,14025.47,34.7,45.1,54.7,18.3,NA
+Octorara Area SD,Chester,25123.08,16630.65,37.3,38.4,50.6,20.5,NA
+Owen J Roberts SD,Chester,20112.28,12712.11,46.1,67.3,76.8,37.1,18.2
+Oxford Area SD,Chester,20748.68,15078.3,29.2,53.7,69.7,19.1,NA
+Phoenixville Area SD,Chester,22239.1,13668.8,37.5,62.3,61.1,22.4,21.4
+Tredyffrin-Easttown SD,Chester,22931.22,14961.77,72.2,77.9,84.6,45.5,25
+Unionville-Chadds Ford SD,Chester,24240.26,15581.26,71.2,86.3,87.9,36,NA
+West Chester Area SD,Chester,20166.17,13418.22,51.2,68,80.5,33.7,27.1
+Allegheny-Clarion Valley SD,Clarion,27701.65,17932.16,34.2,44.7,65.8,15,NA
+Clarion Area SD,Clarion,18226.38,11302.33,53.7,61.8,74.5,18.8,NA
+Clarion-Limestone Area SD,Clarion,20150.98,13049.32,45.1,60.4,72.2,21.1,NA
+Keystone SD,Clarion,19853.76,12516.12,36.6,45.3,64.4,33.3,NA
+North Clarion County SD,Clarion,17645.51,12040.74,60,52.2,60.9,35.3,NA
+Redbank Valley SD,Clarion,19282.44,12785.18,50,36.1,56.7,27.3,NA
+Union SD,Clarion,22914.53,14001.27,50,52.8,61.1,40,NA
+Clearfield Area SD,Clearfield,20491.07,12767.48,16,41.4,57.1,15.2,NA
+Curwensville Area SD,Clearfield,19048.85,12607.54,35.5,48.1,62.8,21.9,NA
+DuBois Area SD,Clearfield,17255.28,11279.55,43.5,44.6,53.8,27.6,NA
+Glendale SD,Clearfield,22152.53,13011.11,53.2,37.8,73.9,31.8,NA
+Harmony Area SD,Clearfield,26798.37,16106.48,NA,72.7,72.7,NA,NA
+Moshannon Valley SD,Clearfield,19953.46,12190.89,43.5,45.6,55.1,35,NA
+Philipsburg-Osceola Area SD,Clearfield,20724.14,12834.71,30.9,55.7,63.9,25.6,NA
+West Branch Area SD,Clearfield,20927.7,13437.36,47.8,49.3,69.6,52.5,NA
+Keystone Central SD,Clinton,21318.64,14082.03,33,44,49.8,18.6,NA
+Benton Area SD,Columbia,22332.27,12831.74,34.3,50,58.3,29.4,NA
+Berwick Area SD,Columbia,17725.84,12157.06,31.2,48.2,63.7,28.2,NA
+Bloomsburg Area SD,Columbia,17516.28,11289.94,36.5,51.8,74.1,32.1,NA
+Central Columbia SD,Columbia,17369.8,11179.91,63,75,77.8,44.4,NA
+Millville Area SD,Columbia,22882.45,14496.78,42.9,34.5,55.2,27.3,NA
+Southern Columbia Area SD,Columbia,17381.55,11043,61.2,33.3,57.1,57.7,NA
+Conneaut SD,Crawford,20106.08,11699.47,43.3,53.4,63.4,44.7,NA
+Crawford Central SD,Crawford,19271.28,12286.99,35.8,60.9,60.7,20.7,NA
+Penncrest SD,Crawford,21574.22,14248.1,41.8,44.8,67.7,25.3,NA
+Big Spring SD,Cumberland,22093.96,15052.85,28.4,47.9,50,21.8,NA
+Camp Hill SD,Cumberland,21635.73,13126.65,51.9,79.6,80.6,26.1,NA
+Carlisle Area SD,Cumberland,18069.73,11786.87,37.6,54.5,67,22.1,13.3
+Cumberland Valley SD,Cumberland,16284.77,9549.67,61.2,74.4,83.3,45.7,38.9
+East Pennsboro Area SD,Cumberland,16208.62,10983.63,46.2,59.5,72.8,33.8,14.3
+Mechanicsburg Area SD,Cumberland,17969.94,11816.1,39.8,59.1,66.1,24.5,23.8
+Shippensburg Area SD,Cumberland,16754.45,11135.68,57.6,47.5,63.6,45.7,NA
+South Middleton SD,Cumberland,17806.48,11637.69,44.1,46,63.4,30.2,NA
+Central Dauphin SD,Dauphin,16386.87,11255.09,33.8,39.3,61.9,20.6,13.1
+Derry Township SD,Dauphin,20295.68,12679.26,61.3,77.4,89.7,48.2,NA
+Halifax Area SD,Dauphin,20634.72,13419.39,49.1,49.1,62.5,22.2,NA
+Harrisburg City SD,Dauphin,19981.39,13264.16,13.4,14.9,27.4,13.2,10.5
+Lower Dauphin SD,Dauphin,20057.26,12808.93,44.8,65.8,76.4,26.9,NA
+Middletown Area SD,Dauphin,19928.53,12076.6,45.3,39.4,53.5,30.8,7.1
+Millersburg Area SD,Dauphin,19963.47,13372.23,37.3,42.6,74.1,20.8,NA
+Steelton-Highspire SD,Dauphin,NA,NA,6.3,9.8,19,4.4,4.3
+Susquehanna Township SD,Dauphin,16173.07,10499.18,37.9,45.3,53,26.3,20.8
+Upper Dauphin Area SD,Dauphin,21706.29,14358.59,42.3,56.9,59.7,27.3,NA
+Chester-Upland SD,Delaware,22138.74,15885.53,0.6,1.3,10.1,0.6,0.7
+Chichester SD,Delaware,26362.95,18039.57,31.3,28.1,55.9,24.8,8.1
+Garnet Valley SD,Delaware,23506.47,16421.72,73.2,81.3,91.3,53.2,54.5
+Haverford Township SD,Delaware,20067.57,13138.29,70.5,80,83.8,50.5,37.9
+Interboro SD,Delaware,21822.24,14094.46,31.4,43.3,66.2,22.2,29
+Marple Newtown SD,Delaware,23808.37,14501.58,41.3,66,64.2,41.3,18.2
+Penn-Delco SD,Delaware,19360.71,12021.27,39.1,46.6,66.4,24,19.2
+Radnor Township SD,Delaware,29853.48,18363.63,79.1,81.8,89.3,51.4,30.8
+Ridley SD,Delaware,22457.68,16366.86,43.7,48.9,61.4,34.4,26.9
+Rose Tree Media SD,Delaware,24220.51,15018.33,64.1,78.6,83.8,41.9,42.1
+Southeast Delco SD,Delaware,21525.45,15187.35,15.7,18.1,39.2,9.9,13.4
+Springfield SD,Delaware,16791.14,11026.54,76,78.1,88.2,55.1,33.3
+Upper Darby SD,Delaware,17585.03,12170.97,20.6,34.9,44.7,18.9,12.2
+Wallingford-Swarthmore SD,Delaware,23794.5,14877.32,69.8,74.8,90,47.3,35.3
+William Penn SD,Delaware,22472.46,15473.28,12,16.5,41.4,8.2,11
+Johnsonburg Area SD,Elk,19837.56,11986.65,34.9,79.1,69.8,20,NA
+Ridgway Area SD,Elk,19008.36,12174.43,45.8,59.3,61,50,NA
+Saint Marys Area SD,Elk,16805.17,10670.64,46.8,57.1,67.7,36.7,NA
+Corry Area SD,Erie,19249.8,12539.02,39.6,44.5,62.2,25.8,NA
+Erie City SD,Erie,17561.91,12179.43,20.2,28.1,34,14.7,8.2
+Fairview SD,Erie,15014.57,9121.34,88.5,78.8,82.8,77.8,NA
+Fort LeBoeuf SD,Erie,17419.87,11302.17,67.8,69.9,81.7,61.4,NA
+General McLane SD,Erie,16615.4,10443.88,49.3,52.2,65.4,39.7,NA
+Girard SD,Erie,19205.03,12664.82,60.6,56,72.7,51.9,NA
+Harbor Creek SD,Erie,15940.69,10464.82,60.3,67.4,72.3,41.7,NA
+Iroquois SD,Erie,22036.53,14219.36,40.3,64.6,70.5,39,NA
+Millcreek Township SD,Erie,16514.27,10339.07,63.9,63.1,69.7,50.5,31.3
+North East SD,Erie,16452.55,10196.1,60.2,55.3,66.7,57.1,NA
+Northwestern SD,Erie,18841.52,12608.5,25.5,49.5,50,14.3,NA
+Union City Area SD,Erie,19399.53,11837.45,39,42.7,59.8,31.6,NA
+Wattsburg Area SD,Erie,19606.54,11224.71,67.8,57.8,87,59,NA
+Albert Gallatin Area SD,Fayette,19337.22,12664.44,39.8,46,52.4,28.7,NA
+Brownsville Area SD,Fayette,20406.57,13348.41,24.4,34.4,38.5,16.1,NA
+Connellsville Area SD,Fayette,18509.17,12158.08,47,48,59.8,41.1,NA
+Frazier SD,Fayette,19595.19,13020.42,21.9,39.1,39.1,20,NA
+Laurel Highlands SD,Fayette,20098.01,13512.2,38.2,40.8,56.6,28.1,NA
+Uniontown Area SD,Fayette,21148.46,13825.39,35.2,34.6,45,31.5,11.8
+Forest Area SD,Forest,36591.53,21368.72,10.8,32.4,58.3,5.3,NA
+Chambersburg Area SD,Franklin,16061.79,10987.3,37.2,43.9,52.5,22.7,17
+Fannett-Metal SD,Franklin,20447.44,12691.63,37.5,42.5,57.5,43.8,NA
+Greencastle-Antrim SD,Franklin,15335.77,10487.14,48,56.1,65.1,34.9,NA
+Tuscarora SD,Franklin,18320.63,11347.67,39.9,56.4,56.8,30.1,NA
+Waynesboro Area SD,Franklin,15220.42,10506.87,46.8,52.3,64,42,NA
+Central Fulton SD,Fulton,17728.98,12133.62,57.6,42.4,72.9,40.7,NA
+Forbes Road SD,Fulton,20554.7,12680.55,15,10,31.6,,NA
+Southern Fulton SD,Fulton,NA,NA,55,70.7,68.3,36.4,NA
+Carmichaels Area SD,Greene,20909.42,12945.72,32.4,44.1,39.7,21.9,NA
+Central Greene SD,Greene,22075.04,14371.15,21.8,46.6,47.6,18.4,NA
+Jefferson-Morgan SD,Greene,20118.11,12906.37,33.3,36.7,40.8,29.2,NA
+Southeastern Greene SD,Greene,21813.64,12713.87,57.1,51.2,67.4,50,NA
+West Greene SD,Greene,23024.64,13838.59,18.4,24,48,5,NA
+Huntingdon Area SD,Huntingdon,18616.5,12149.74,49.2,46.2,59.2,39.3,NA
+Juniata Valley SD,Huntingdon,19163.57,12105.07,33.3,26.5,49,18.2,NA
+Mount Union Area SD,Huntingdon,19370.9,13674.55,31.3,29.7,34.9,21.2,NA
+Southern Huntingdon County SD,Huntingdon,17817.27,10525,28.6,35.1,36.8,17.2,NA
+Homer-Center SD,Indiana,21713.04,14035.63,65.3,43.8,61.6,55.6,NA
+Indiana Area SD,Indiana,20227.17,14033.75,59.2,70.9,77.8,44.2,NA
+Marion Center Area SD,Indiana,22620.87,14123.01,46.5,51.7,51.1,27.5,NA
+Penns Manor Area SD,Indiana,25928.8,16189.16,47.3,49.1,61.8,38.5,NA
+Purchase Line SD,Indiana,25184.17,15357.06,50,55.9,72.9,45.7,NA
+River Valley SD,Indiana,NA,NA,47.5,43.3,59.6,39.3,NA
+United SD,Indiana,24277.8,15731.56,56.7,63.6,77.6,37,NA
+Brockway Area SD,Jefferson,19785.38,12258.32,67.9,60.7,71.4,62.5,NA
+Brookville Area SD,Jefferson,17184.74,10693.55,65.4,67.9,76.8,45.8,NA
+Punxsutawney Area SD,Jefferson,19617.37,13018.9,56.8,65.2,61.6,48.3,NA
+Juniata County SD,Juniata,16307.9,10798.97,39.7,50.6,64.9,27.7,NA
+Abington Heights SD,Lackawanna,15498.47,10314.46,72.4,74,86.1,53.8,NA
+Carbondale Area SD,Lackawanna,17707.85,12120.71,26.9,31.4,58.5,18.5,NA
+Dunmore SD,Lackawanna,17160.28,11783.53,38.3,46.6,67.2,20.8,NA
+Lakeland SD,Lackawanna,18207.8,11762.47,36.6,57.4,70.3,22.2,NA
+Mid Valley SD,Lackawanna,16994.68,11547.63,30.1,62.9,69.7,18.5,NA
+North Pocono SD,Lackawanna,19945.52,12796.56,50,66.9,64.5,24.1,NA
+Old Forge SD,Lackawanna,19079.66,12767.67,31.3,56.7,52.2,17.6,NA
+Riverside SD,Lackawanna,15158.44,9942.99,45.4,51.9,67.3,38.2,NA
+Scranton SD,Lackawanna,18349.37,12891.83,21.9,30.8,54.8,18.2,12.3
+Valley View SD,Lackawanna,17423.98,11662.77,49.7,67.5,78,26.7,NA
+Cocalico SD,Lancaster,21965.38,14633.75,60.9,59.2,72,42.9,NA
+Columbia Borough SD,Lancaster,20660.11,13006.37,24.7,11.3,16.7,22,NA
+Conestoga Valley SD,Lancaster,20347.87,13431.06,58.6,51.5,71.6,42.1,47.4
+Donegal SD,Lancaster,18416.97,12313.25,42.3,47.4,59.2,30,NA
+Eastern Lancaster County SD,Lancaster,23232.75,13492.91,59.8,60.4,71.4,49.3,NA
+Elizabethtown Area SD,Lancaster,19843.35,13561.82,56,54.4,68.4,40.2,NA
+Ephrata Area SD,Lancaster,18881.01,11621.38,71.8,63.2,74.4,56.4,NA
+Hempfield SD,Lancaster,18191.39,12753.77,71.6,73.2,74.3,53.9,63.6
+Lampeter-Strasburg SD,Lancaster,19169.28,12754.24,66.2,73.1,74.7,58.2,NA
+Lancaster SD,Lancaster,25908.89,16763.83,20.3,27.1,45.9,17.3,16.3
+Manheim Central SD,Lancaster,20392.6,12929.46,50.2,60.2,65.7,30.6,NA
+Manheim Township SD,Lancaster,16514.65,10460.52,53,64.9,74.1,35.4,33.3
+Penn Manor SD,Lancaster,16487.61,11167.15,65.3,63.7,68.1,52.7,27.6
+Pequea Valley SD,Lancaster,26923.73,16251.05,56.7,58.8,56.3,45.8,NA
+Solanco SD,Lancaster,20010.06,12379.53,36.8,51.7,50.2,25.5,NA
+Warwick SD,Lancaster,18884.27,12969.52,64.4,74.5,74.9,48.8,NA
+Ellwood City Area SD,Lawrence,19198.62,12907.4,24.2,28.6,51.1,2.8,NA
+Laurel SD,Lawrence,18575.11,11404.12,49.2,68.6,72.5,30.8,NA
+Mohawk Area SD,Lawrence,16568.93,11290.98,64,51.7,68.9,55.3,NA
+Neshannock Township SD,Lawrence,16538.8,10393.78,76.1,70.3,90.5,61.1,NA
+New Castle Area SD,Lawrence,19012.06,13197.02,32.8,31.4,44.3,26.8,10
+Shenango Area SD,Lawrence,20167.91,13612.3,65.1,78.1,70.3,47.4,NA
+Union Area SD,Lawrence,18266.06,11925.84,58.3,61.1,64.9,52.4,NA
+Wilmington Area SD,Lawrence,21674.33,13455.2,48.5,64.2,71.6,28,NA
+Annville-Cleona SD,Lebanon,18497.09,11559.97,45.5,49.1,50,25.6,NA
+Cornwall-Lebanon SD,Lebanon,17122.47,11247.61,48.7,66.4,68.8,35.9,21.4
+Eastern Lebanon County SD,Lebanon,19966.42,12859.51,53.4,55.7,56,40,NA
+Lebanon SD,Lebanon,15472.08,10469.44,12.7,16.2,31.4,10.2,0
+Northern Lebanon SD,Lebanon,19821.11,12624.12,50,45.3,54.9,34,NA
+Palmyra Area SD,Lebanon,15198.3,9704.01,74.6,75.6,88.3,50.8,NA
+Allentown City SD,Lehigh,18508.43,13665.32,13.1,18.2,42.3,11.7,11.4
+Catasauqua Area SD,Lehigh,20868.25,13852.06,25.9,27.5,52.8,24.3,NA
+East Penn SD,Lehigh,19650.74,13375.8,46.3,59.4,76.2,28.4,41.2
+Northern Lehigh SD,Lehigh,20635.22,12847.33,47.7,42.3,53.2,36.4,NA
+Northwestern Lehigh SD,Lehigh,22075.93,13646.59,63.9,63.1,65.7,46.9,NA
+Parkland SD,Lehigh,20215.41,13729.04,48.7,62.1,77.9,33.2,21.4
+Salisbury Township SD,Lehigh,24060.25,14856.44,43.5,48.9,67.2,31.1,NA
+Southern Lehigh SD,Lehigh,20168.73,13017.97,59.2,68.1,82.4,40.5,NA
+Whitehall-Coplay SD,Lehigh,18752.09,12712.62,37.1,46.8,58.2,29.9,9.5
+Crestwood SD,Luzerne,15074.74,10572.28,49.6,63.8,62.2,41.2,NA
+Dallas SD,Luzerne,16170.87,10986.25,60.1,67.8,76.1,57.6,NA
+Greater Nanticoke Area SD,Luzerne,14959.26,10472.38,24.1,31.6,50,12.8,NA
+Hanover Area SD,Luzerne,18366.84,12706.66,13.1,29.1,49.6,9.1,0
+Hazleton Area SD,Luzerne,14297.13,9984.91,22.4,32.5,50.1,18.5,9.1
+Lake-Lehman SD,Luzerne,19942.8,13281.2,58.8,67.2,84,39.4,NA
+Northwest Area SD,Luzerne,22951.97,14669.85,44.6,43.9,63.6,37.1,NA
+Pittston Area SD,Luzerne,16416.66,10774.24,20.7,44.7,56.6,17.9,NA
+Wilkes-Barre Area SD,Luzerne,13565.56,10096.78,28.9,25.8,51.2,25.3,8.5
+Wyoming Area SD,Luzerne,19610.85,13044.14,29.9,38.2,61.8,18.5,NA
+Wyoming Valley West SD,Luzerne,16770.84,11192.07,31.1,38.2,52.1,18.6,16.7
+East Lycoming SD,Lycoming,16311.48,10314.04,61.1,56.9,61.6,25.7,NA
+Jersey Shore Area SD,Lycoming,19284.2,13121,38.5,44.5,55.4,33.3,NA
+Loyalsock Township SD,Lycoming,15989.55,10264.03,66.7,62.8,65.6,57.5,NA
+Montgomery Area SD,Lycoming,19708.81,12587.17,63.8,56.5,79,57.1,NA
+Montoursville Area SD,Lycoming,17557.12,11186.62,40.8,42.7,53.8,23.5,NA
+Muncy SD,Lycoming,18958.27,11866.71,65.2,76.1,77.5,53.8,NA
+South Williamsport Area SD,Lycoming,16124.86,10411.47,31.3,38.1,41.7,17.8,NA
+Williamsport Area SD,Lycoming,19272.53,12282.52,44.5,30.8,58.2,36.4,16.4
+Bradford Area SD,McKean,18503.14,11669.58,60.1,55.5,64.3,47,NA
+Kane Area SD,McKean,18707.3,11791.89,48.6,50,64.9,37.8,NA
+Otto-Eldred SD,McKean,20642.85,12843.34,54,38,64,45.5,NA
+Port Allegany SD,McKean,18008.25,11932.2,41.5,58.2,60,18.2,NA
+Smethport Area SD,McKean,22647.18,14228.13,40.4,48.3,55,20,NA
+Commodore Perry SD,Mercer,24031.57,14919.74,63,57.1,85.2,,NA
+Farrell Area SD,Mercer,28036.91,18932.67,3,14.7,18.2,3,4.2
+Greenville Area SD,Mercer,17843.79,11542.74,33.3,42.6,57.4,23.1,NA
+Grove City Area SD,Mercer,21693.4,14208.95,48.6,57.4,66,30.4,NA
+Hermitage SD,Mercer,16264.82,10615.91,54.3,74.7,81,39.3,NA
+Jamestown Area SD,Mercer,25534.16,14321.1,44.4,50,61.1,,NA
+Lakeview SD,Mercer,23805.87,15036.92,40.6,47.8,71,32.4,NA
+Mercer Area SD,Mercer,17793.04,11465.99,44.8,59.4,78.3,28.6,NA
+Reynolds SD,Mercer,20868.54,13381.98,36.2,41,50.8,34.6,NA
+Sharon City SD,Mercer,19324.18,13409.18,46.2,48,68,38.3,14.3
+Sharpsville Area SD,Mercer,17028.93,11211.99,22.2,56.2,71.8,7.7,NA
+West Middlesex Area SD,Mercer,21570.45,13971.75,40.9,64.6,51,38.5,NA
+Mifflin County SD,Mifflin,16927.59,11008.28,38,51.1,60.5,26,NA
+East Stroudsburg Area SD,Monroe,23793.23,14904.34,29.5,40.4,58.4,23,20.9
+Pleasant Valley SD,Monroe,22288.38,13662.85,37.7,51.8,70.7,23.4,26.1
+Pocono Mountain SD,Monroe,25948.53,16061.87,46.7,46.4,63.3,37.3,32.3
+Stroudsburg Area SD,Monroe,23347.07,15511.26,53.1,60.6,73.9,46.3,38
+Abington SD,Montgomery,20224.1,12564.25,50.1,61.3,65.8,36.5,29.9
+Bryn Athyn SD,Montgomery,83788.46,49057.97,NA,NA,NA,NA,NA
+Cheltenham SD,Montgomery,28232.12,17726.53,30.2,45.6,64.4,20.6,19.3
+Colonial SD,Montgomery,25166.25,16461.53,75.6,79,83.3,59.7,51
+Hatboro-Horsham SD,Montgomery,27492.52,17146.03,49.3,54.2,60.7,39.2,37.5
+Jenkintown SD,Montgomery,23322.8,13578.92,53.7,65.2,85.4,40,27.3
+Lower Merion SD,Montgomery,33099.93,21147.38,80.7,86,91.4,51.9,26.8
+Lower Moreland Township SD,Montgomery,21801.54,14681.16,65.4,76.2,66.2,44,NA
+Methacton SD,Montgomery,25688.34,16348.28,51.8,66.5,66.4,29,21.1
+Norristown Area SD,Montgomery,20797.37,13854.28,10.4,15.8,30.2,9.6,11.2
+North Penn SD,Montgomery,21759.04,14469.23,49.3,64.6,75.2,34.4,31.6
+Perkiomen Valley SD,Montgomery,23578.53,15383.02,53.3,69.8,86.3,38.5,33.3
+Pottsgrove SD,Montgomery,21486.91,14465.3,36.2,52.8,62.8,23.1,13.3
+Pottstown SD,Montgomery,24095.21,15470.18,20.1,30.4,46.2,17.2,12.7
+Souderton Area SD,Montgomery,21725.59,14744.41,57.6,66.9,75.8,36.3,17.4
+Springfield Township SD,Montgomery,24549.17,14380.04,31.1,64.6,71.8,16.7,0
+Spring-Ford Area SD,Montgomery,21536.2,14000.79,62.9,78.2,80.7,50,23.1
+Upper Dublin SD,Montgomery,23914.43,15770.64,42.7,72.4,86.4,25,6.9
+Upper Merion Area SD,Montgomery,25926.59,16863.18,28.7,58.3,50.5,23.4,10
+Upper Moreland Township SD,Montgomery,18975.89,12140.93,49.6,55.4,66.4,29.8,31
+Upper Perkiomen SD,Montgomery,22313.56,14249.72,57.7,56.9,70.1,46.9,NA
+Wissahickon SD,Montgomery,22832.3,15736.25,61.7,71.4,86.2,40.9,13.8
+Danville Area SD,Montour,20278.92,14044.12,42.4,64.6,71.2,28.6,NA
+Bangor Area SD,Northampton,18984.05,12150.78,51.1,58.6,76.3,39.6,NA
+Bethlehem Area SD,Northampton,20353.35,13945.69,28.6,33.6,48.6,18,20.4
+Easton Area SD,Northampton,22580.37,15508.37,26.3,37,44.6,16.5,15.7
+Nazareth Area SD,Northampton,19066.47,12607.29,48.8,62,71.6,33.7,38.5
+Northampton Area SD,Northampton,21233.75,13816.66,29.7,46.6,63.6,22.1,NA
+Pen Argyl Area SD,Northampton,20062.17,12333.66,38.7,48.3,60.8,17.1,NA
+Saucon Valley SD,Northampton,23047.56,15098.22,65.6,63.3,82,48.8,NA
+Wilson Area SD,Northampton,18135.8,11847.11,43.1,54.7,74.6,28.4,27.8
+Line Mountain SD,Northumberland,20535.51,12405.78,42.6,58.9,72.7,31.6,NA
+Milton Area SD,Northumberland,19252.72,11859.23,54.9,39.7,63.7,43.8,NA
+Mount Carmel Area SD,Northumberland,14730.73,10204.56,33.6,29.6,50,23.7,NA
+Shamokin Area SD,Northumberland,14820.73,10601.68,28.1,29.1,48.7,18.4,NA
+Shikellamy SD,Northumberland,16114.83,11546.79,31.6,58,63.4,22.5,NA
+Warrior Run SD,Northumberland,17048.09,10372.63,21.8,56.3,54,14.6,NA
+Greenwood SD,Perry,20283.02,12630.18,62.2,79.6,87,53.3,NA
+Newport SD,Perry,21332.26,14093.76,49.2,41.5,56.1,41.7,NA
+Susquenita SD,Perry,18027.97,11661.51,28.6,43.4,55.6,25,NA
+West Perry SD,Perry,19106.03,12688.86,52,53.9,82.5,37.5,NA
+Philadelphia City SD,Philadelphia,21360.05,15695.5,25.6,32.3,51.9,21.5,13.2
+Delaware Valley SD,Pike,20617.56,13366.92,71.5,78.1,92.6,62.6,NA
+Wallenpaupack Area SD,Pike,28731.34,18254.9,46.1,58.7,65.5,36.4,NA
+Austin Area SD,Potter,33952.42,20172.35,46.7,56.3,56.3,,NA
+Coudersport Area SD,Potter,22150.22,14185.8,29.4,54,42.3,21.7,NA
+Galeton Area SD,Potter,24611.32,15861.23,20,45,65,,NA
+Northern Potter SD,Potter,21295.07,13482.08,26.9,37,55.2,14.3,NA
+Oswayo Valley SD,Potter,24416.35,14943.37,67.9,51.7,69,57.1,NA
+Blue Mountain SD,Schuylkill,17829.13,11072.64,46.8,62.3,73.8,32.7,NA
+Mahanoy Area SD,Schuylkill,17380.74,10772.47,30.3,25,34.2,34.3,NA
+Minersville Area SD,Schuylkill,18080.36,12110.14,21.5,39.4,47.7,15.2,NA
+North Schuylkill SD,Schuylkill,15304.62,9703.29,39.1,33.3,61.9,24.7,NA
+Pine Grove Area SD,Schuylkill,16911.43,10485,59.4,50.5,60,35,NA
+Pottsville Area SD,Schuylkill,16586.12,11237.29,50.8,45.9,65.5,40.3,61.5
+Saint Clair Area SD,Schuylkill,14783.49,10153.4,NA,NA,NA,NA,NA
+Schuylkill Haven Area SD,Schuylkill,18717.25,11342.21,48.7,56.6,62.3,50,NA
+Shenandoah Valley SD,Schuylkill,17150.72,11527.86,36.2,33.3,30,36.6,NA
+Tamaqua Area SD,Schuylkill,16316.24,10614.1,66.1,41.7,66.2,35.3,NA
+Tri-Valley SD,Schuylkill,16300.4,9944.35,23.2,44.9,55.1,16.7,NA
+Williams Valley SD,Schuylkill,16288.15,10717.55,21,50,42.4,21.3,NA
+Midd-West SD,Snyder,NA,NA,49.6,65,70.2,50,NA
+Selinsgrove Area SD,Snyder,17805.57,11413.63,68,56.8,71.3,60.3,NA
+Berlin Brothersvalley SD,Somerset,16673.53,10624.93,44.4,69.6,60,30.8,NA
+Conemaugh Township Area SD,Somerset,16983.1,10193.39,58.7,54.8,73.3,33.3,NA
+Meyersdale Area SD,Somerset,20920.65,12667.13,40,43.3,56.7,29.6,NA
+North Star SD,Somerset,18286.24,11169.63,38.9,64.4,58.2,25,NA
+Rockwood Area SD,Somerset,22641.27,12435.67,44.9,56.4,74.5,44.4,NA
+Salisbury-Elk Lick SD,Somerset,24762.68,15089.8,33.3,33.3,45.5,,NA
+Shade-Central City SD,Somerset,28495.69,18036.46,55,50,75,55,NA
+Shanksville-Stonycreek SD,Somerset,24767.66,14196.21,52.6,33.3,57.1,,NA
+Somerset Area SD,Somerset,20195.32,12649.37,66.2,67.6,78.6,60.6,NA
+Turkeyfoot Valley Area SD,Somerset,23728.04,12389.9,36.4,27.3,54.5,41.7,NA
+Windber Area SD,Somerset,15286.69,9506.6,49.3,60.8,74.7,42.4,NA
+Sullivan County SD,Sullivan,27560.88,17517.38,59,55,61.5,31.3,NA
+Blue Ridge SD,Susquehanna,20368.64,12932.13,39.4,54.2,64.8,28.6,NA
+Elk Lake SD,Susquehanna,20536.11,13629.7,32.4,38.2,61.8,22.5,NA
+Forest City Regional SD,Susquehanna,22017.64,14444.55,54.2,66,59.6,42.9,NA
+Montrose Area SD,Susquehanna,23338.78,14592.37,61.3,66.7,81.7,50,NA
+Mountain View SD,Susquehanna,24577.14,15566.53,65.2,75.8,77.3,57.6,NA
+Susquehanna Community SD,Susquehanna,21858.46,13745.05,52.9,46.2,76.9,40,NA
+Northern Tioga SD,Tioga,18285.77,11763.43,54.8,73.2,67.2,50,NA
+Southern Tioga SD,Tioga,19824.87,12051.61,28.9,36.2,53.2,18.8,NA
+Wellsboro Area SD,Tioga,18812.62,11746.28,49.5,48.6,67.6,40.8,NA
+Lewisburg Area SD,Union,20625.24,13105.3,70.3,68.6,83.5,45.8,NA
+Mifflinburg Area SD,Union,18435.79,11799.58,40.6,50.8,65.8,30.6,NA
+Cranberry Area SD,Venango,17465.64,12046.87,53.2,56.3,67.2,29.6,NA
+Franklin Area SD,Venango,20341.9,13463.37,61.4,53.5,65.6,48.2,NA
+Oil City Area SD,Venango,18527.1,12030.56,40.9,48.4,51.2,30.3,NA
+Titusville Area SD,Venango,19751.88,12095.52,53.7,45.4,63.4,44.3,NA
+Valley Grove SD,Venango,18793.74,12149.31,59.6,50,80.3,39.3,NA
+Warren County SD,Warren,20046.29,11829.14,48,52.5,68.7,30.7,NA
+Avella Area SD,Washington,24029.03,14968.97,54.8,51.5,66.7,50,NA
+Bentworth SD,Washington,17822.44,11283.91,47.3,55.4,72,39,NA
+Bethlehem-Center SD,Washington,19533,12378.05,24.6,47,63.6,15.2,NA
+Burgettstown Area SD,Washington,21375.77,14063.88,43.5,32.8,57.1,37.5,NA
+California Area SD,Washington,17089.77,10377.23,23.9,28.4,47,14.8,NA
+Canon-McMillan SD,Washington,16806.33,10052.1,57,64.7,75.9,35.5,7.1
+Charleroi SD,Washington,18541.03,12023.99,28.6,34.5,57,31.3,NA
+Chartiers-Houston SD,Washington,17232.1,10552.18,64.9,67.6,86.5,55.2,NA
+Fort Cherry SD,Washington,22042.81,13329.77,39.6,52.2,67.7,27,NA
+McGuffey SD,Washington,19484.47,11843.25,45.5,35.3,65.9,22.9,NA
+Peters Township SD,Washington,17018.16,10921.18,78.4,81.6,89.1,60,NA
+Ringgold SD,Washington,18231.19,11098.61,25.7,56.4,50,13.8,NA
+Trinity Area SD,Washington,20008.88,11866.45,53.1,61.7,76.7,39.5,NA
+Washington SD,Washington,18724.66,12349.93,14.7,18.6,25,14.7,8.7
+Wayne Highlands SD,Wayne,24933.95,16346.34,72.2,79.4,85.1,64.6,NA
+Western Wayne SD,Wayne,27715.77,16433.08,47.1,52.9,65.7,26.5,NA
+Belle Vernon Area SD,Westmoreland,15876.2,10386.04,33.6,55.9,71.3,21.7,NA
+Burrell SD,Westmoreland,18887.51,11833.5,18.4,35.1,51.1,10.4,NA
+Derry Area SD,Westmoreland,18544.67,11667.11,14.4,44.4,75,18,NA
+Franklin Regional SD,Westmoreland,18249.17,11751.66,67.6,58.7,78.6,45.5,NA
+Greater Latrobe SD,Westmoreland,17252,11614.49,52.2,58,69.7,29.4,NA
+Greensburg Salem SD,Westmoreland,18121.79,12264.88,45.6,48.6,55.2,28.8,23.5
+Hempfield Area SD,Westmoreland,18870.66,13244.07,60.8,58.1,82,46.6,NA
+Jeannette City SD,Westmoreland,20681.82,13764.22,48.1,25.9,58.5,45.5,NA
+Kiski Area SD,Westmoreland,17933.46,11820.59,39.9,53,62.4,26.5,8.3
+Ligonier Valley SD,Westmoreland,22757.5,13969.33,41.7,53.5,71.8,37.2,NA
+Monessen City SD,Westmoreland,25399.22,17087.57,3.1,9.7,25.8,3.8,0
+Mount Pleasant Area SD,Westmoreland,16471.57,10791.75,46,42.7,60.2,35.6,NA
+New Kensington-Arnold SD,Westmoreland,20358.25,14345,9.6,19.1,30.9,9,3.8
+Norwin SD,Westmoreland,15411.55,10088.31,63.9,70.1,85.3,51.6,NA
+Penn-Trafford SD,Westmoreland,16178.68,10128.26,83.5,84.3,88.1,76.3,NA
+Southmoreland SD,Westmoreland,17095.96,10919.82,19.2,39.8,52.8,11.9,NA
+Yough SD,Westmoreland,18035.13,11107.79,40.3,32.6,51.1,32.3,NA
+Lackawanna Trail SD,Wyoming,22732.41,15564.36,22.1,42.9,67.5,23.7,NA
+Tunkhannock Area SD,Wyoming,23129.98,14739.08,27.6,57.5,53.4,13.8,NA
+Central York SD,York,17463.53,11802.8,54.3,66.5,71.3,38.5,22.2
+Dallastown Area SD,York,17672.03,12098.22,54.9,67.3,72,42.7,29.5
+Dover Area SD,York,18369.54,12425.89,52.5,41.9,58.5,42.5,31.3
+Eastern York SD,York,20468.36,13653.01,63.3,61.3,85.2,54,NA
+Hanover Public SD,York,18348.86,12165.86,34.5,45.4,69.7,30.9,30.8
+Northeastern York SD,York,17792.1,12092.39,61.8,61.5,70.9,42.1,47.4
+Northern York County SD,York,16495.7,10152.96,31.3,50.4,70.4,25.9,NA
+Red Lion Area SD,York,17206.22,11767.62,33.1,45.8,71.2,23.5,20
+South Eastern SD,York,21189.45,13421.85,58.6,59.6,77.2,39.7,NA
+South Western SD,York,17927.52,11821.9,65.8,55.1,58.4,50,56.3
+Southern York County SD,York,19405.12,11552.18,33.1,67,77.7,26.8,NA
+Spring Grove Area SD,York,18216.71,11205.34,51.3,58.9,78.7,37.3,NA
+West Shore SD,York,17948.06,11980.03,50.4,50.4,67.1,36.3,21.7
+West York Area SD,York,20843.69,13867.72,51.8,43.5,58.3,42.2,23.5
+York City SD,York,20845.31,14618.22,11.4,13.9,39.1,10.1,4.5
+York Suburban SD,York,19637.21,13606.49,61.9,63.2,82.6,45.9,40.9
