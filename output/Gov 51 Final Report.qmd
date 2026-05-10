@@ -1,30 +1,108 @@
 ---
 title: "Spent on Student Success: Per-Pupil Spending and Proficiency Rates in Pennsylvania Public Schools"
-author: "Caleb Masshardt"
+author: "Caleb Masshardt | May 11, 2026"
 format: pdf
 editor: visual
 ---
 
-## 1. Introduction
+See my GitHub final project repository for the data and coding for this report: <https://github.com/cmasshardt/gov51-project>\
+
+# 1. Introduction
+
+In the field of education policy, spending is always at the center of debates. Lawmakers at every level of government engage in tense negotiations over public school spending, school boards deliberate over the local tax levels necessary to provide a quality education to students in their districts, and schools with the highest-need populations often seek higher funding levels to remediate student underperformance. \
+
+The state of Pennsylvania is emblematic of this trend. Just last year, the state legislature engaged in a battle over the state's budget – including debates over education spending – that extended four months past the deadline. Public education spending is already at the forefront of debates over this year's budget (Corrigan, 2026). Underlying legislative questions over public school spending is the need for ongoing compliance with a 2017 Pennsylvania Supreme Court decision holding that the state's public schools were constitutionally underfunded (William Penn SD v. Dept. of Education, 2017). Clearly, state leaders view spending as a key pillar of education policy. \
+
+Pennsylvania certainly faces dramatic shortcomings in its public education system. According to standardized test data from the 2023-24 academic year, only 41.6% of students were proficient or above in algebra, and only 63.2% scored proficient or above on the English (literature) exam, by high school graduation (Assessment Reporting, 2026). While state leaders across the political spectrum have been quick to suggest spending as a solution to the schools' shortcomings, our understanding of whether spending is tied to better student outcomes is limited at best. \
+
+In this paper, I set out to answer a simple descriptive question: ***Is higher average per-pupil expenditure in Pennsylvania public schools associated with higher student proficiency on state assessments?*** By analyzing this relationship both at the statewide level over time and across districts for the 2023-24 school year, I will assess whether spending and student achievement are as related as the debates surrounding education funding might suggest. Ultimately, this description of spending and student proficiency in Pennsylvania, though limited in scope, will lay the groundwork for future predictive and causal analysis that will equip lawmakers with the information necessary to advance interventions that truly make an impact for students. \
+
+# 2. Data and Methodology 
+
+## 2.1 Sources of Data
+
+While my research question is rather straightforward, the challenge of obtaining the right data to answer the question was formidable from the outset. Fortunately, the state of Pennsylvania collects district expenditure data and student Keystone exam score data by district (and for certain specific demographic groups). While this data required a substantial amount of wrangling and cleaning, I was able to compile two key datasets for this analysis, detailed below: \
+
+*State-Level Spending and Proficiency over Time ("keystone")\
+*
+
+The "keystone" dataset includes summary data at the statewide level for observing the relationship between per-pupil spending and proficiency on the Pennsylvania standardized assessments (Keystone exams) over the period from the 2014-15 academic year to the 2023-24 academic year. For each year in that range, this simple dataset includes the statewide average per-pupil spending (total expenditures divided by number of enrolled students) as well proficiency rates (percent of students scoring "proficient" or "advanced") for the three Keystone exams – Algebra, Biology, and English. \
+
+*Snapshot of Spending and Proficiency Across Districts in 2023-24 ("snapshot2024")\
+*
+
+The "snapshot2024" dataset zeroes in on the 2023-24 academic year to more closely examine the relationship between per-pupil spending and exam proficiency across districts in the state. In addition to basic district information, this dataset includes the following variables: per-pupil expenditures, proficiency rates on the three Keystone subject exams, and proficiency rates on the Algebra exam for demographic subgroups ("economically disadvantaged" students and student racial groups). \
+
+*Note: Not every district reports the proficiency rates by racial or economic subgroup, but a substantial number do. Given the time required to wrangle the data for these subgroups as well as the similarities for all subjects along other metrics, I have opted to only include Algebra subgroup comparisons in this report. \
+*
+
+## 2.2 Methodology
+
+In the sections to follow, I will describe the relationship between per-pupil spending and student proficiency in Pennsylvania from two different angles:
+
+1.  To analyze the statewide relationship between spending and test proficiency, I will regress the statewide proficiency rate for each Keystone exam onto the statewide average per-pupil expenditure for each academic year from 2014-15 to 2023-24.
+2.  To analyze the relationship between spending and student proficiency across districts, I will zoom in on the 2023-24 academic year and regress district per-pupil spending onto district proficiency rates in 2024.
+3.  For the snapshot of 2023-24, I will also compare the relationship between spending and test proficiency for different subgroups of students, particularly those who are economically disadvantaged (as defined by state standards for family income level) and those from historically disadvantaged racial minorities. While per-pupil spending data is not specific to these subgroups, it is nonetheless valuable to understand whether a district's spending on students relates to proficiency in different ways when compared across demographic subgroups.\
+
+## 2.3 Challenges and Limitations
+
+I will further detail the limitations of this descriptive work in the conclusion section when discussing potential avenues for future research, but several points are worth noting before describing the relationships found in the data. \
+
+The first key limitation of this analysis is that the metrics for spending on students and for student outcomes are not as precise as the ideal, given the limited data that the state collects. District-level per pupil spending highlights a district's investment in students broadly, but it does not differentiate higher and lower need schools within districts. Moreover, the proficiency variable captures students' mastery of statewide standards at the high school level only, and using broad categories of "advanced," "proficient," "basic," and "below basic" rather than specific student scores. The relationship analyzed in this paper thus gives a very generalized — though still very useful — picture of spending and proficiency in the state. \
+
+The second limitation that bears noting is that this analysis is not causal or predictive, but rather descriptive. The relationship between per-pupil spending and proficiency in this analysis is simply intended to diagnose the situation rather than offer a policy prescription based on causal findings. Specifically, this descriptive work does not take into account confounding variables that might explain why per-pupil spending relates to student proficiency in perhaps unexpected ways. \
+
+Lastly, the recent impact of the COVID-19 pandemic on education spending and on student performance demands taking any description from this period of time with a grain of salt. The role of the pandemic is also evident in the data, as the state did not collect much of the usual data for the 2019-20 academic year due to complications from COVID-19. \
+
+# 3. Statewide Trends over Time 
+
+From the perspective of state-level policymakers, the relationship between statewide per-pupil spending and student success, as measured by Keystone exam proficiency, is the most streaightforward and relevant. Using the "keystone" dataset described above, the following analysis describes this association at the statewide level. \
+
+Looking at the per-pupil spending variable in isolation reveals a clear trend of rising spending over the course of the past decade:
+
+```{r}
+#Reading in data and packages
+#| message: false
+#| warning: false
+library(tidyverse)
+library(knitr)
+keystone <- read_csv("./data/keystone.csv")
+snapshot2024 <- read_csv("./data/snapshot2024_2.csv")
+
+#| message: false
+#| warning: false
+library(scales)
+ggplot(keystone, aes(x=year, y=tot_current_per_adm)) +
+geom_col(width=0.8, fill="steelblue") +
+  labs(title = "Per-Pupil Expenditures, 2014-2024") +
+  labs(x = "Academic Year", y = "Current Expenditure per ADM ($)") +
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+  theme_minimal()
+```
+
+\
+
+# 4. Snapshot of 2024: District-Level Spending and Proficiency
 
 Here\
 
-## 2. Data and Methodology 
+# 5. Digging Deeper: Subgroup Data 
 
 Here\
 
-## 3. Statewide Trends over Time 
+# 6. Conclusion 
+
+## 6.1 Key Takeaways
 
 Here\
 
-## 4. Snapshot of 2024: District-Level Spending and Proficiency
+## 6.2 Avenues for Future Research
 
-Here\
+Here
 
-## 5. Digging Deeper: Subgroup Data 
+\
+{{< pagebreak >}}
 
-Here\
-
-## 6. Conclusion 
+## Works Cited 
 
 Here
