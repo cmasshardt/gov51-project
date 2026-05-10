@@ -23,7 +23,7 @@ snapshot2024 <- read_csv("./data/snapshot2024.csv")
 The "keystone" dataset includes summary data at the statewide level for observing the relationship between per-pupil spending and proficiency on the Pennsylvania standardized assessments (Keystone exams) over the period from the 2014-15 academic year to the 2023-24 academic year. The dataset includes the following variables:
 
 | Variable Name | Description |
-|------------------------------------|------------------------------------|
+|----|----|
 | year | Academic year from which the data was collected. Expenditures follow the academic/fiscal year (i.e. 2014-15), and Keystone exam scores are collected in the spring (i.e. 2015). |
 | tot_current_per_adm | Statewide current expenditure per average daily member – the average number of students *enrolled* in schools during the academic year. Measured in dollars. |
 | tot_instruction_per_adm | Statewide *instruction* expenditure per average daily member, isolating spending that is specifically targeted toward student instruction. Measured in dollars. |
@@ -48,7 +48,7 @@ snapshot2024***
 The "snapshot2024" dataset zeroes in on the 2023-24 academic year to more closely examine the relationship between per-pupil spending and exam proficiency across districts in the state. This dataset includes the following variables:
 
 | Variable Name | Description |
-|------------------------------------|------------------------------------|
+|----|----|
 | district | Name of the school district. There are 500 school districts in the state of Pennsylvania. |
 | county | The county in which the school district resides. |
 | current_per_adm | The school district's current expenditure per average daily member – the average number of students *enrolled* in a district during the academic year. Measured in dollars. |

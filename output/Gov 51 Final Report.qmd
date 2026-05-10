@@ -1,0 +1,30 @@
+---
+title: "Spent on Student Success: Per-Pupil Spending and Proficiency Rates in Pennsylvania Public Schools"
+author: "Caleb Masshardt"
+format: pdf
+editor: visual
+---
+
+## 1. Introduction
+
+Here\
+
+## 2. Data and Methodology 
+
+Here\
+
+## 3. Statewide Trends over Time 
+
+Here\
+
+## 4. Snapshot of 2024: District-Level Spending and Proficiency
+
+Here\
+
+## 5. Digging Deeper: Subgroup Data 
+
+Here\
+
+## 6. Conclusion 
+
+Here
