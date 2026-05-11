@@ -23,7 +23,7 @@ snapshot2024 <- read_csv("./data/snapshot2024.csv")
 The "keystone" dataset includes summary data at the statewide level for observing the relationship between per-pupil spending and proficiency on the Pennsylvania standardized assessments (Keystone exams) over the period from the 2014-15 academic year to the 2023-24 academic year. The dataset includes the following variables:
 
 | Variable Name | Description |
-|----|----|
+|------------------------------------|------------------------------------|
 | year | Academic year from which the data was collected. Expenditures follow the academic/fiscal year (i.e. 2014-15), and Keystone exam scores are collected in the spring (i.e. 2015). |
 | tot_current_per_adm | Statewide current expenditure per average daily member – the average number of students *enrolled* in schools during the academic year. Measured in dollars. |
 | tot_instruction_per_adm | Statewide *instruction* expenditure per average daily member, isolating spending that is specifically targeted toward student instruction. Measured in dollars. |
@@ -48,7 +48,7 @@ snapshot2024***
 The "snapshot2024" dataset zeroes in on the 2023-24 academic year to more closely examine the relationship between per-pupil spending and exam proficiency across districts in the state. This dataset includes the following variables:
 
 | Variable Name | Description |
-|----|----|
+|------------------------------------|------------------------------------|
 | district | Name of the school district. There are 500 school districts in the state of Pennsylvania. |
 | county | The county in which the school district resides. |
 | current_per_adm | The school district's current expenditure per average daily member – the average number of students *enrolled* in a district during the academic year. Measured in dollars. |
@@ -298,6 +298,24 @@ summary(alg_black_lm)
 #Correlation coefficient
 coef_alg_black <- cor(snapshot2024_2$current_per_adm, snapshot2024_2$prof_alg_black, use="complete.obs")
 coef_alg_black
+```
+
+*White students*
+
+```{r}
+#Plotting 2023-24 per-pupil spending and Algebra proficiency rate for white students 
+ggplot(snapshot2024_2,
+aes(current_per_adm, prof_alg_white)) +
+  geom_point(color = "steelblue") +
+  xlim(10000,40000) +
+  geom_smooth(method = "lm") +
+  labs(x = "District Expenditure per ADM ($)", y = "Algebra Proficiency Rate (%)",
+       title = "Per Pupil Spending and Algebra Proficiency for White Students") +
+  theme_minimal()
+
+#Simple regression
+alg_white_lm <- lm(prof_alg_white ~ current_per_adm, data = snapshot2024_2)
+summary(alg_white_lm)
 ```
 
 ***\
