@@ -11,7 +11,7 @@ See my GitHub final project repository for the data and coding for this report: 
 
 In the field of education policy, spending is always at the center of debates. Lawmakers at every level of government engage in tense negotiations over public school spending, school boards deliberate over the local tax levels necessary to provide a quality education to students in their districts, and schools with the highest-need populations often seek higher funding levels to remediate student underperformance.\
 
-The state of Pennsylvania is emblematic of this trend. Just last year, the state legislature engaged in a battle over the state's budget – including debates over education spending – that extended four months past the deadline. Public education spending is already at the forefront of debates over this year's budget (Corrigan, 2026). Underlying legislative questions over public school spending is the need for ongoing compliance with a 2017 Pennsylvania Supreme Court decision holding that the state's public schools were constitutionally underfunded (William Penn SD v. Dept. of Education, 2017). Clearly, state leaders view spending as a key pillar of education policy.\
+The state of Pennsylvania is emblematic of this trend. Just last year, the state legislature engaged in a battle over the state's budget – including over education spending – that extended four months past the deadline. Public education spending is already at the forefront of debates over this year's budget (Corrigan, 2026). Underlying legislative questions over public school spending is the need for ongoing compliance with a 2017 Pennsylvania Supreme Court decision holding that the state's public schools were constitutionally underfunded (William Penn SD v. Dept. of Education, 2017). Clearly, state leaders view spending as a key pillar of education policy.\
 
 Pennsylvania certainly faces dramatic shortcomings in its public education system. According to standardized test data from the 2023-24 academic year, only 41.6% of students were proficient or above in algebra, and only 63.2% scored proficient or above on the English (literature) exam, by high school graduation (Assessment Reporting, 2026). While state leaders across the political spectrum have been quick to suggest spending as a solution to the schools' shortcomings, our understanding of whether spending is tied to better student outcomes is limited at best.\
 
@@ -25,7 +25,7 @@ While my research question is rather straightforward, the challenge of obtaining
 
 ***State-Level Spending and Proficiency over Time ("keystone")***
 
-The "keystone" dataset includes summary data at the statewide level for observing the relationship between per-pupil spending and proficiency on the Pennsylvania standardized assessments (Keystone exams) over the period from the 2014-15 academic year to the 2023-24 academic year. For each year in that range, this simple dataset includes the statewide average per-pupil spending (total expenditures divided by number of enrolled students) as well proficiency rates (percent of students scoring "proficient" or "advanced") for the three Keystone exams – Algebra, Biology, and English.\
+The "keystone" dataset includes summary data at the statewide level for observing the relationship between per-pupil spending and proficiency on the Pennsylvania standardized assessments (Keystone exams) over the period from the 2014-15 academic year to the 2023-24 academic year. For each year in that range, this simple dataset includes the statewide average per-pupil spending (total expenditures divided by number of enrolled students) as well proficiency rates (percent of students scoring "proficient" or "advanced") for the three Keystone exams – Algebra, Biology, and English. Expenditure data is drawn from annual state financial reporting (AFR Data Summary Level, 2026). \
 
 ***Snapshot of Spending and Proficiency Across Districts in 2023-24 ("snapshot2024")***
 
@@ -60,13 +60,13 @@ In the sections to follow, I will describe the relationship between per-pupil sp
 
 1.  To analyze the statewide relationship between spending and test proficiency, I will regress the statewide proficiency rate for each Keystone exam onto the statewide average per-pupil expenditure for each academic year from 2014-15 to 2023-24.
 2.  To analyze the relationship between spending and student proficiency across districts, I will zoom in on the 2023-24 academic year and regress district per-pupil spending onto district proficiency rates in 2024.
-3.  For the snapshot of 2023-24, I will also compare the relationship between spending and test proficiency for different subgroups of students, particularly those who are economically disadvantaged (as defined by state standards for family income level) and those from historically disadvantaged racial minorities. While per-pupil spending data is not specific to these subgroups, it is nonetheless valuable to understand whether a district's spending on students relates to proficiency in different ways when compared across demographic subgroups.\
+3.  For the snapshot of 2023-24, I will also compare the relationship between spending and test proficiency for different subgroups of students, particularly those who are economically disadvantaged (as defined by state standards for family income level) and Black students, who represent the most widely-reported minority group in the state's assessment data (Assessment Reporting, 2026). While per-pupil spending data is not specific to these subgroups, it is nonetheless valuable to understand whether a district's spending on students relates to proficiency in different ways when compared across demographic subgroups.\
 
 ## 2.3 Challenges and Limitations
 
-I will further detail the limitations of this descriptive work in the conclusion section, but several points are worth noting before describing the relationships found in the data. The first key limitation of this analysis is that the metrics for spending on students and for student outcomes are not as precise as the ideal, given the limited data that the state collects. District-level per pupil spending highlights a district's investment in students broadly, but it does not differentiate higher and lower need schools within districts. Moreover, the proficiency variable captures students' mastery of statewide standards at the high school level only, and using broad categories of "advanced," "proficient," "basic," and "below basic" rather than specific student scores. The relationship analyzed in this paper thus gives a very generalized — though still very useful — picture of spending and proficiency in the state.\
+Several challenges and limitations are worth noting before describing the relationships found in the data. The first key limitation of this analysis is that the metrics for spending on students and for student outcomes are not as precise as possible, given the limited data that the state collects. District-level per pupil spending highlights a district's investment in students broadly, but it does not differentiate higher and lower need schools within districts. Moreover, the proficiency variable captures students' mastery of statewide standards at the high school level only, and using broad categories of "advanced," "proficient," "basic," and "below basic" rather than specific student scores. The relationship analyzed in this paper thus gives a generalized — though still useful — picture of spending and proficiency in the state.\
 
-The second limitation that bears noting is that this analysis is not causal or predictive, but rather descriptive. The relationship between per-pupil spending and proficiency in this analysis is simply intended to diagnose the situation rather than offer a policy prescription based on causal findings. Specifically, this descriptive work does not take into account confounding variables that might explain why per-pupil spending relates to student proficiency in perhaps unexpected ways.\
+The second limitation that bears noting is that this analysis is not causal or predictive, but rather descriptive. The relationship between per-pupil spending and proficiency here is simply intended to diagnose the situation rather than offer a policy prescription based on causal findings. Specifically, this descriptive work does not take into account confounding variables that might explain why per-pupil spending relates to student proficiency in perhaps unexpected ways.\
 
 Lastly, the recent impact of the COVID-19 pandemic on education spending and on student performance demands taking any description from this period of time with a grain of salt. The role of the pandemic is also evident in the data, as the state did not collect much of the usual data for the 2019-20 academic year due to complications from COVID-19.\
 
@@ -101,7 +101,7 @@ geom_col(width=0.8, fill="steelblue") +
 ```
 
 \
-Student proficiency rates tell a different story: student proficiency rates on the Algebra and English (literature) Keystone exams remained largely stagnant from 2015 to 2019 and have significantly decreased since the onset of the COVID-19 pandemic.
+Student proficiency rates tell a different story: on the Algebra and English (literature) Keystone exams, proficiency remained largely stagnant from 2015 to 2019 and has significantly decreased since the onset of the COVID-19 pandemic.
 
 ```{r}
 #| echo: false
@@ -132,7 +132,7 @@ geom_col(width=0.8, fill="steelblue") +
 ```
 
 \
-Now, putting these pieces together, we can see the relationship between per-pupil spending and student proficiency over this time period. Overall, we see a negative relationship between per-pupil spending and student proficiency rates over this period. For Algebra, the correlation coefficient (r) for the relationship is -0.78, which indicates a strong correlation, but is impacted by pandemic-related outliers. The coefficient of -0.0043 percentage points on per-pupil spending (tot_current_per_adm) in the regression with Algebra proficiency rates is statistically significant at the 0.05 level, but is likewise influenced by Covid outliers. For English, the coefficient is not statistically significant.
+Now, putting these pieces together, we can see the relationship between per-pupil spending and student proficiency over this time period. Overall, we observe a negative relationship between per-pupil spending and student proficiency rates over this period. For Algebra, the correlation coefficient (r) for the relationship is -0.78, which indicates a strong negative correlation, but is impacted by pandemic-related outliers. The coefficient of -0.0043 percentage points on per-pupil spending (tot_current_per_adm) in the regression with Algebra proficiency rates is statistically significant at the 0.05 level, but is likewise influenced by Covid outliers. For English, the coefficient is not statistically significant.
 
 ```{r}
 #| echo: false
@@ -158,7 +158,7 @@ aes(tot_current_per_adm, tot_prof_alg)) +
 ```
 
 \
-Altogether, analysis of statewide trends reveals that the correlation between per-pupil spending and student proficiency is negative and strong. Nonetheless, this relationship is influenced by the Covid years, when the state spent more money while students struggled amidst to interruptions to everyday life. Moreover, a statistically significant regression coefficient on per-pupil spending only exists for Algebra (not for English), and the coefficient is only -0.0043 (a one-dollar increase in per-pupil spending is associated with a -0.0043 percentage point decrease in Algebra proficiency). As such, the relationship between per-student spending and student proficiency is not very meaningfully interpretable but, if anything, is negative.\
+Altogether, analysis of statewide trends reveals that the correlation between per-pupil spending and student proficiency is negative and strong. Nonetheless, this relationship is influenced by the Covid years, when the state spent more money while students struggled amidst interruptions to everyday life. Moreover, a statistically significant regression coefficient on per-pupil spending only exists for Algebra (not for English), and the coefficient is only -0.0043 (a one-dollar increase in per-pupil spending is associated with a 0.0043 percentage point decrease in Algebra proficiency). Given the limitations on analysis due to COVID effects, the relationship between per-student spending and student proficiency is not very meaningfully interpretable but, if anything, is negative.\
 
 # 4. Snapshot of 2024: District-Level Spending and Proficiency
 
@@ -196,10 +196,9 @@ aes(current_per_adm, prof_eng)) +
   theme_minimal()
 ```
 
-\
-One variation of this analysis that does yield a statistically significant relationship is the relationship between per-pupil *instructional* spending and student Algebra proficiency. Instructional spending refers to spending on teachers, curricular materials, and other instruction-related costs. When we regress Algebra proficiency rate by district onto instructional spending by district, the statitstically significant coefficient on instructional per-pupil spending is -0.00093 percentage points, meaning that each additional dollar in per-pupil spending is associated with a 0.00093 p.p. decrease in the percentage of students scoring proficient or above on the Algebra exam.
+One variation that does yield a statistically significant relationship is the relationship between per-pupil *instructional* spending (on teachers, curriculum, etc) and Algebra proficiency. The statistically significant coefficient on instructional per-pupil spending is -0.00093 percentage points, meaning that each additional \$1 in per-pupil spending is associated with a 0.00093 p.p. decrease in the percentage of students scoring proficient or above in Algebra.
 
-```{r}
+```{r, out.width="80%", fig.align='center'}
 #| echo: false
 #| message: false
 #| warning: false
@@ -218,7 +217,7 @@ alg_instruction_lm <- lm(prof_alg ~ instruction_per_adm, data = snapshot2024)
 summary(alg_instruction_lm)
 ```
 
-If we can indeed conclude that the relationship between instructional per-pupil spending and student Algebra proficiency is negative at the 0.05 significance level, then this result is quite counterintuitive. Why would it be that schools spending more on student instruction have a lower rate fo students scoring proficient or above and state assessments? One potential explanation might be that schools with higher-need students spend more on instruction for remedial purposes, such that schools that spend more on instruction have lower-performing students. This is where further causal research is needed to isolate the effect of instructional spending amidst confounders such as student baseline performance and other student needs.\
+If we can indeed conclude that the relationship between instructional per-pupil spending and student Algebra proficiency is negative at the 0.05 significance level, then this result is quite counter-intuitive. Why would it be that schools spending more on student instruction have a lower rate of students scoring proficient or above and state assessments? One potential explanation might be that schools with higher-need students spend more on instruction for remedial purposes, such that schools that spend more on instruction have lower-performing students. This is where further causal research is needed to isolate the effect of instructional spending amidst confounders. \
 
 # 5. Digging Deeper: Subgroup Data
 
@@ -226,12 +225,15 @@ Since increases in expenditures are especially relevant interventions for higher
 
 ## 5.1 Economically Disadvantaged Students
 
-For economically disadvantaged (ED) students, the relationship between district overall per-pupil spending and Algebra proficiency is noisy and not statistically significant, as was the case for students writ large. Since the state does not report data by individual student, we do not have a "non-economically disadvantaged" group to which we might compare the relationship found here. Nonetheless, we can see that the relationship between spending and proficiency remains noisy and not significant for those students who are economically disadvantaged.
+For economically disadvantaged (ED) students, the relationship between district overall per-pupil spending and Algebra proficiency is not statistically significant and reveals a large amount of noise, as was the case for students writ large. Since the state does not report data by individual student, we do not have a "non-economically disadvantaged" group to which we might compare the relationship found here. Nonetheless, we can see that the relationship between spending and proficiency remains noisy and not significant for those students who are economically disadvantaged.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
+#Reading in spreadsheet with added data 
+snapshot2024_2 <- read_csv("./data/snapshot2024_2.csv")
+
 #Plotting 2023-24 per-pupil spending and Algebra proficiency rate for
 # economically disadvantaged students 
 ggplot(snapshot2024_2,
@@ -246,16 +248,12 @@ aes(current_per_adm, prof_alg_dis)) +
 
 ## 5.2 Minority Students
 
-For students from minority racial backgrounds in Pennsylvania, we are able to make comparisons of the relationship between district per-pupil spending and student proficiency across groups, since most districts report these breakdowns. Since the highest number of districts report data for Black/African-American students and White students, I will highlight the comparison across these two groups, recognizing that results may be different for other demographics groups that fewer districts report on, such as Hispanic and Asian students.\
-
-It bears noting again that many districts do not report proficiency rates by racial group, and those that do may systematically differ from those that do not. Nonetheless, a sufficient number report this data such that analysis is still useful.
+For students from minority racial backgrounds in Pennsylvania, we are able to make comparisons of the relationship between district per-pupil spending and student proficiency across groups, since most districts report these breakdowns. Since the highest number of districts report data for Black/African-American students and White students, I will highlight the comparison across these two groups, recognizing that results may be different for other demographics groups that fewer districts report on, such as Hispanic and Asian students.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
-#Reading in spreadsheet with added data 
-snapshot2024_2 <- read_csv("./data/snapshot2024_2.csv")
 
 #Plotting 2023-24 per-pupil spending and Algebra proficiency rate for black students 
 ggplot(snapshot2024_2,
@@ -274,7 +272,7 @@ summary(alg_black_lm)
 
 A look at the scatterplot for per-pupil spending and Black/African-American student proficiency reveals a noisy and statistically insignificant relationship, as with the overall data. By comparing the regression coefficient on per-pupil spending for the Black student group with that of the white student group, we can determine whether spending and proficiency relate differently across these groups.\
 
-The following regression output reveals that the coefficient on per-pupil spending for the outcome of student proficiency is also not statistically significant for white students. Nonetheless, we can still compare the coefficients for the Black/African-American and white student groups using a simple t-test with a null hypothesis of no difference in coefficient between the white (W) and black (B) student groups.
+The following regression output reveals that the coefficient on per-pupil spending when explaning student proficiency is also not statistically significant for white students. Nonetheless, we can still compare the coefficients for the Black/African-American and white student groups using a simple t-test with a null hypothesis of no difference in coefficient between the white (W) and black (B) student groups.
 
 ```{r}
 #| echo: false
@@ -293,29 +291,35 @@ $t$ = $\frac{\hat{\beta}_W - \hat{\beta}_B}{\sqrt{(SE(\hat{\beta}_W))^2 + (SE(\h
 2*pt(0.3503, df = (143+483-1-1-2), lower.tail=FALSE)
 ```
 
-Since p = 0.7262 is far greater than 0.05, we fail to reject the null hypothesis of no difference in the relationship between per-pupil spending and student proficiency across the groups. In other words, the relationship between per-student spending and proficiency on the statewide Algebra exam does not significantly differ for Black vs. white students. \
+Since p = 0.7262 is far greater than 0.05, we fail to reject the null hypothesis of no difference in the relationship between per-pupil spending and student proficiency across the groups. In other words, the relationship between per-student spending and proficiency on the statewide Algebra exam does not significantly differ for Black vs. white students.\
 
 # 6. Conclusion
 
 ## 6.1 Key Takeaways
 
-In summary, per-pupil spending and student proficiency rates on statewide assessments in Pennsylvania are for the most part not significantly associated when observed generally. At the statewide level over time, we see a negative association, though it is complicated by large dips in proficiency during COVID and thus difficult to meaningfully interpret. Across districts, we see a significant yet small negative coefficient on *instructional* per-pupil spending as an explanatory variable for student proficiency in Algebra, with non-significant coefficients for per-pupil spending at large. Lastly, a look at the data for economically disadvantaged students and Black students reveals a similar relationship between spending and student proficiency to that of the entire student population. \
+In summary, per-pupil spending and student proficiency rates on statewide assessments in Pennsylvania are not significantly associated when observed generally. At the statewide level over time, we see a negative association, though it is complicated by large dips in proficiency during COVID and thus difficult to meaningfully interpret. Across districts, we see a significant yet small negative coefficient on *instructional* per-pupil spending as an explanatory variable for student proficiency in Algebra, with non-significant coefficients for per-pupil spending at large. Lastly, a look at the data for economically disadvantaged students and Black students reveals a similar relationship between spending and student proficiency to that of the entire student population.\
 
 ## 6.2 Avenues for Future Research
 
-With this descriptive foundation in place, there are a number of relevant and fascinating directions for future research on public school spending and student outcomes. For example, future researchers could bolster our descriptive understanding of the association between spending and student performance by collecting data on individual test scores and growth over time, rather than broader district average spending and proficiency levels. \
+With this descriptive foundation in place, there are a number of potential directions for future research on public school spending and student outcomes. For example, future researchers could bolster our descriptive understanding of the association between spending and student performance by collecting data on individual test scores and growth over time, rather than broader district average spending and proficiency levels.\
 
 An even more informative avenue for further research would be a causal analysis of the relationship between spending and student proficiency, since the analysis in this paper simply describes association rather than causation. If instructional spending is indeed negatively associated with student Algebra proficiency, one would expect to see confounders such as baseline student need and other district spending priorities at play. There a few methods by which to potentially analyze this causal relationship:
 
 1.  A natural experiment leveraging random variation or cutoffs in spending, perhaps related to the distribution of COVID-19 emergency funding in recent years.
-2.  Leverage other arbitrary (as-good-as-random) cutoffs in school's student population levels or income levels (such as Title I vs. II schools) that lead similar schools to receive substantially different levels of funding.
+2.  Leverage other arbitrary cutoffs in school's student population levels or income levels (such as Title I vs. II schools) that lead similar schools to receive substantially different levels of funding.
 3.  Find an instrumental variable that provides as-good-as-random assignment of students into districts or years of education with higher levels of spending to determine the effects of additional spending on student test scores.
 
 \
-Ultimately, any analysis that provides parents, communities, and policymakers with a better understanding of how to improve student outcomes while responsibly spending taxpayer resources equips us to build a more effective and equitable education system in Pennsylvania and beyond.
+Ultimately, any analysis that provides parents, communities, and policymakers with a better understanding of how to improve student outcomes while responsibly spending taxpayer resources equips us to build a more effective and equitable education system in Pennsylvania and beyond. By diagnosing the state's education landscape through descriptive statistics and ultimately through causal analysis, researchers can lay a foundation for education policy that works for students.
 
 {{< pagebreak >}}
 
 ## Works Cited
 
-Here
+“AFR Data Summary Level.” Accessed March 26, 2026. <https://www.pa.gov/agencies/education/programs-and-services/schools/grants-and-funding/school-finances/financial-data/summary-of-annual-financial-report-data/afr-data-summary-level>.\
+
+“Assessment Reporting.” Accessed March 26, 2026. <https://www.pa.gov/agencies/education/data-and-reporting/assessment-reporting>. \
+
+Corrigan, James. “Federal Budget Uncertainty Looms over Pennsylvania Education.” Fox43.Com, March 5, 2026. <https://www.fox43.com/article/news/education/pennsylvania-education-funding-appropriations-committee/521-9efb22a9-a1b4-441b-b182-ff99e4e9e731>.\
+
+William Penn School District v. Department of Education, 46 MAP 2015 (Supreme Court of Pennsylvania September 28, 2007). <https://law.justia.com/cases/pennsylvania/supreme-court/2017/46-map-2015.html>.\
